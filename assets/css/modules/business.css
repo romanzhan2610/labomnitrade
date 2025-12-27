@@ -1,7 +1,6 @@
 .business {
   position: relative;
-  min-height: calc(100dvh - 8rem);
-  max-height: 100vh;
+  aspect-ratio: 16 / 9;
   background: url('../../img/business-bg.jpg') center/cover no-repeat;
 }
 
