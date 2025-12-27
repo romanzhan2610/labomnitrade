@@ -9,7 +9,7 @@
   font-size: 2rem;
   line-height: 140%;
   text-transform: uppercase;
-  color: var(--color-primary);
+  color: #858585;
   margin-bottom: 1.6rem;
 }
 
@@ -141,8 +141,8 @@
 }
 
 .product-card__tag--hit {
-  background: var(--color-primary);
-  color: var(--color-bg-white);
+  background: #FCE5E1;
+  color: var(--color-primary);
 }
 
 .product-card__tag--recommend {
@@ -196,8 +196,8 @@
 .product-card__title {
   font-family: var(--font-accent);
   font-weight: 700;
-  font-size: 1.6rem;
-  line-height: 130%;
+  font-size: 2.4rem;
+  line-height: 110%;
   text-transform: uppercase;
   color: var(--color-primary);
 }
@@ -249,11 +249,10 @@
   background: var(--color-bg-white);
   border: none;
   border-radius: var(--radius-sm);
-  font-family: var(--font-accent);
-  font-weight: 700;
+  font-family: var(--font-main);
+  font-weight: 500;
   font-size: 1.6rem;
-  line-height: 100%;
-  text-transform: uppercase;
+  line-height: 140%;
   color: var(--color-primary);
   cursor: pointer;
   transition: all var(--transition-fast);
