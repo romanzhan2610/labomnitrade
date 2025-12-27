@@ -34,7 +34,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 6rem;
-  margin-top: 20rem;
+  margin-top: 18rem;
 }
 
 .hero__title {
@@ -58,6 +58,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  padding: 1rem;
   gap: 2rem;
   width: 41.3rem;
   height: 16.8rem;
@@ -79,13 +80,15 @@
 }
 
 .category-card__image {
-  width: 16.8rem;
-  height: 16.8rem;
+  width: auto;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 6px;
 }
 
 .category-card__body {
   justify-content: space-between;
-  padding: 1.5rem 1.5rem 1.5rem 0;
+  padding: 1rem 1rem 1rem 0;
 }
 
 .category-card__title {
@@ -96,7 +99,7 @@
 .category-card__desc {
   font-size: 1.6rem;
   line-height: 1.8rem;
-  text-transform: uppercase;
+  opacity: 0.6;
 }
 
 .category-card__link {
