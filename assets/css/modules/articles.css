@@ -36,11 +36,12 @@
 .articles__right {
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .articles__carousel-wrapper {
   position: relative;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .articles__carousel {
