@@ -66,12 +66,9 @@
 }
 
 .btn--outline:hover {
-  background: #ffffff;
-  color: var(--color-primary);
-}
-
-.btn--outline:hover .icon {
-  stroke: var(--color-primary);
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #ffffff;
 }
 
 .btn__icon {
