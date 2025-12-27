@@ -1,0 +1,129 @@
+.footer {
+  background: var(--color-primary);
+}
+
+.footer-top {
+  padding: 6rem 0;
+}
+
+.footer-top__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr 1.5fr;
+  gap: 4rem;
+}
+
+.footer-top__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-top__label {
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 2rem;
+}
+
+.footer-top__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.footer-top__link {
+  font-family: var(--font-accent);
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: var(--color-bg-white);
+  transition: color var(--transition-fast);
+}
+
+.footer-top__link:hover {
+  color: var(--color-accent);
+}
+
+.footer-top__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3rem;
+}
+
+.footer-top__social-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1.2rem;
+}
+
+.footer-top__social {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-top__social-link {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg-white);
+  border-radius: 50%;
+  transition: background var(--transition-fast);
+}
+
+.footer-top__social-link:hover {
+  background: var(--color-accent);
+}
+
+.footer-top__social-link .icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  fill: var(--color-primary);
+}
+
+.footer-top__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.footer-top__phone {
+  font-family: var(--font-accent);
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 130%;
+  color: var(--color-bg-white);
+  transition: color var(--transition-fast);
+}
+
+.footer-top__phone:hover {
+  color: var(--color-accent);
+}
+
+.footer-top__email {
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 140%;
+  color: var(--color-bg-white);
+  transition: color var(--transition-fast);
+}
+
+.footer-top__email:hover {
+  color: var(--color-accent);
+}
+
+.footer-top__address {
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: right;
+}

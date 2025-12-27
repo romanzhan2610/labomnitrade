@@ -9,6 +9,7 @@
 @import url("./modules/business.css");
 @import url("./modules/articles.css");
 @import url("./modules/reviews.css");
+@import url("./modules/footer.css");
 
 :root {
   --font-main: "Roboto", sans-serif;
