@@ -9,7 +9,8 @@ export function initReviewsCarousel() {
   if (cards.length === 0) return;
   
   let currentIndex = 0;
-  const maxIndex = cards.length - 1;
+  const visibleCards = 3;
+  const maxIndex = Math.max(0, cards.length - visibleCards);
   
   function getStep() {
     const card = cards[0];

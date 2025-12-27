@@ -109,7 +109,7 @@
 
 .review-card {
   flex-shrink: 0;
-  width: 38rem;
+  width: calc((100% - 4rem) / 3);
   background: var(--color-bg-white);
   border-radius: var(--radius-md);
   padding: 3rem;
@@ -210,22 +210,22 @@
 .reviews__stats {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: center;
-  gap: 3rem;
+  gap: 4rem;
 }
 
 .reviews__rating {
   display: flex;
   align-items: flex-start;
-  gap: 1.6rem;
+  gap: 2rem;
 }
 
 .reviews__rating-number {
   font-family: var(--font-accent);
   font-weight: 700;
-  font-size: 12rem;
-  line-height: 80%;
+  font-size: 16rem;
+  line-height: 75%;
   color: var(--color-primary);
 }
 
@@ -233,41 +233,43 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
 }
 
 .reviews__rating-star {
-  width: 4rem;
-  height: 4rem;
+  width: 6rem;
+  height: 6rem;
   fill: #FFB800;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
 }
 
 .reviews__rating-label {
-  font-family: var(--font-main);
-  font-weight: 400;
-  font-size: 1.4rem;
-  line-height: 140%;
+  font-family: var(--font-accent);
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 130%;
   color: var(--color-primary);
 }
 
 .reviews__count {
-  text-align: right;
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
 }
 
 .reviews__count-number {
   font-family: var(--font-accent);
   font-weight: 700;
-  font-size: 6rem;
+  font-size: 8rem;
   line-height: 100%;
   color: var(--color-primary);
 }
 
 .reviews__count-label {
-  font-family: var(--font-main);
-  font-weight: 400;
-  font-size: 1.4rem;
-  line-height: 140%;
+  font-family: var(--font-accent);
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 100%;
   color: var(--color-primary);
 }
 
