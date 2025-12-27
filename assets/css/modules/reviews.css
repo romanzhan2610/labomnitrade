@@ -101,6 +101,12 @@
   height: 1.6rem;
   stroke: #ffffff !important;
   fill: none !important;
+  color: #ffffff !important;
+}
+
+.reviews__arrow svg {
+  stroke: #ffffff !important;
+  fill: none !important;
 }
 
 .reviews__arrow--prev .icon {
@@ -109,12 +115,14 @@
 
 .review-card {
   flex-shrink: 0;
-  width: calc((100% - 4rem) / 3);
+  min-width: calc((100% - 4rem) / 3);
+  max-width: calc((100% - 4rem) / 3);
   background: var(--color-bg-white);
   border-radius: var(--radius-md);
   padding: 3rem;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .review-card__header {
