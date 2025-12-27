@@ -1,444 +1,442 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Myshop</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/modules/catalog.css" />
-    <link rel="stylesheet" href="assets/css/modules/about.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="container header__inner">
-          <div class="header__left">
-            <a href="/" class="header__logo logo">
-              <svg class="logo__icon">
-                <use href="assets/img/sprite.svg#icon-logo-composite"></use>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Myshop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/modules/catalog.css" />
+  <link rel="stylesheet" href="assets/css/modules/about.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container header__inner">
+        <div class="header__left">
+          <a href="/" class="header__logo logo">
+            <svg class="logo__icon">
+              <use href="assets/img/sprite.svg#icon-logo-composite"></use>
+            </svg>
+          </a>
+
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link">Каталог</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">О нас</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Журнал</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Помощник выбора</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Для бизнеса</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="header__actions">
+          <form class="search-form">
+            <input type="text" class="search-form__input" placeholder="Найти" />
+            <button type="submit" class="search-form__btn">
+              <svg class="icon">
+                <use href="assets/img/sprite.svg#icon-search"></use>
+              </svg>
+            </button>
+          </form>
+
+          <div class="user-menu">
+            <a href="#" class="user-menu__item">
+              <svg class="icon">
+                <use href="assets/img/sprite.svg#icon-user"></use>
               </svg>
             </a>
-
-            <nav class="header__nav nav">
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a href="#" class="nav__link">Каталог</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">О нас</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">Журнал</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">Помощник выбора</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">Для бизнеса</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">Контакты</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-
-          <div class="header__actions">
-            <form class="search-form">
-              <input
-                type="text"
-                class="search-form__input"
-                placeholder="Найти"
-              />
-              <button type="submit" class="search-form__btn">
-                <svg class="icon">
-                  <use href="assets/img/sprite.svg#icon-search"></use>
-                </svg>
-              </button>
-            </form>
-
-            <div class="user-menu">
-              <a href="#" class="user-menu__item">
-                <svg class="icon">
-                  <use href="assets/img/sprite.svg#icon-user"></use>
-                </svg>
-              </a>
-              <a href="#" class="user-menu__item">
-                <svg class="icon">
-                  <use href="assets/img/sprite.svg#icon-favorite"></use>
-                </svg>
-              </a>
-              <a href="#" class="user-menu__item">
-                <svg class="icon">
-                  <use href="assets/img/sprite.svg#icon-cart"></use>
-                </svg>
-              </a>
-            </div>
+            <a href="#" class="user-menu__item">
+              <svg class="icon">
+                <use href="assets/img/sprite.svg#icon-favorite"></use>
+              </svg>
+            </a>
+            <a href="#" class="user-menu__item">
+              <svg class="icon">
+                <use href="assets/img/sprite.svg#icon-cart"></use>
+              </svg>
+            </a>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <main class="main">
-        <section class="hero">
-          <video class="hero__video" autoplay muted loop playsinline>
-            <source src="assets/video/main-bg.mp4" type="video/mp4" />
-          </video>
+    <main class="main">
+      <section class="hero">
+        <video class="hero__video" autoplay muted loop playsinline>
+          <source src="assets/video/main-bg.mp4" type="video/mp4" />
+        </video>
 
-          <div class="container hero__inner">
-            <div class="hero__content">
-              <h1 class="hero__title">Обжариваем кофе с 2014 года</h1>
-              <a href="#" class="btn btn--outline-light">
-                <span>Подробнее</span>
-                <svg class="icon btn__icon">
-                  <use href="assets/img/sprite.svg#icon-arrow-right"></use>
-                </svg>
-              </a>
-            </div>
-
-            <div class="hero__cards">
-              <article class="category-card card is-active">
-                <img src="assets/img/main-card-1.jpg" alt="Кофе в зернах" class="category-card__image card__image" />
-                <div class="category-card__body card__body">
-                  <h3 class="category-card__title card__title">Кофе в зернах</h3>
-                  <p class="category-card__desc card__desc">Краткое описание категории на несколько строк</p>
-                  <a href="#" class="category-card__link icon-link icon-link--arrow">
-                    <svg class="icon">
-                      <use href="assets/img/sprite.svg#icon-arrow-right"></use>
-                    </svg>
-                  </a>
-                </div>
-              </article>
-
-              <article class="category-card card">
-                <img src="assets/img/main-card-2.jpg" alt="Молотый кофе" class="category-card__image card__image" />
-                <div class="category-card__body card__body">
-                  <h3 class="category-card__title card__title">Молотый кофе</h3>
-                  <p class="category-card__desc card__desc">Идеально для турки и фильтра</p>
-                  <a href="#" class="category-card__link icon-link icon-link--arrow">
-                    <svg class="icon">
-                      <use href="assets/img/sprite.svg#icon-arrow-right"></use>
-                    </svg>
-                  </a>
-                </div>
-              </article>
-
-              <article class="category-card card">
-                <img src="assets/img/main-card-3.jpg" alt="Дрип-пакеты" class="category-card__image card__image" />
-                <div class="category-card__body card__body">
-                  <h3 class="category-card__title card__title">Дрип-пакеты</h3>
-                  <p class="category-card__desc card__desc">Свежий кофе за 3 минуты без оборудования</p>
-                  <a href="#" class="category-card__link icon-link icon-link--arrow">
-                    <svg class="icon">
-                      <use href="assets/img/sprite.svg#icon-arrow-right"></use>
-                    </svg>
-                  </a>
-                </div>
-              </article>
-            </div>
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <h1 class="hero__title">Обжариваем кофе с 2014 года</h1>
+            <a href="#" class="btn btn--outline-light">
+              <span>Подробнее</span>
+              <svg class="icon btn__icon">
+                <use href="assets/img/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </a>
           </div>
-        </section>
 
-        <section class="catalog">
-          <div class="container">
-            <span class="catalog__label">{каталог}</span>
-            <h2 class="catalog__title">Наш ассортимент</h2>
-
-            <div class="catalog__filters">
-              <div class="catalog__filters-left">
-                <button class="filter-btn">
+          <div class="hero__cards">
+            <article class="category-card card is-active">
+              <img src="assets/img/main-card-1.jpg" alt="Кофе в зернах" class="category-card__image card__image" />
+              <div class="category-card__body card__body">
+                <h3 class="category-card__title card__title">Кофе в зернах</h3>
+                <p class="category-card__desc card__desc">Краткое описание категории на несколько строк</p>
+                <a href="#" class="category-card__link icon-link icon-link--arrow">
                   <svg class="icon">
-                    <use href="assets/img/sprite.svg#icon-filter"></use>
+                    <use href="assets/img/sprite.svg#icon-arrow-right"></use>
                   </svg>
-                  <span>Все фильтры</span>
-                  <svg class="icon icon--sm">
-                    <use href="assets/img/sprite.svg#icon-chevron-down"></use>
-                  </svg>
-                </button>
-                <button class="filter-btn">
-                  <span>Кислотность</span>
-                  <svg class="icon icon--sm">
-                    <use href="assets/img/sprite.svg#icon-chevron-down"></use>
-                  </svg>
-                </button>
-                <button class="filter-btn">
-                  <span>Плотность</span>
-                  <svg class="icon icon--sm">
-                    <use href="assets/img/sprite.svg#icon-chevron-down"></use>
-                  </svg>
-                </button>
-                <button class="filter-btn">
-                  <span>Горечь</span>
-                  <svg class="icon icon--sm">
-                    <use href="assets/img/sprite.svg#icon-chevron-down"></use>
-                  </svg>
-                </button>
+                </a>
               </div>
+            </article>
 
-              <button class="sort-btn">
-                <span>По популярности</span>
+            <article class="category-card card">
+              <img src="assets/img/main-card-2.jpg" alt="Молотый кофе" class="category-card__image card__image" />
+              <div class="category-card__body card__body">
+                <h3 class="category-card__title card__title">Молотый кофе</h3>
+                <p class="category-card__desc card__desc">Идеально для турки и фильтра</p>
+                <a href="#" class="category-card__link icon-link icon-link--arrow">
+                  <svg class="icon">
+                    <use href="assets/img/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="category-card card">
+              <img src="assets/img/main-card-3.jpg" alt="Дрип-пакеты" class="category-card__image card__image" />
+              <div class="category-card__body card__body">
+                <h3 class="category-card__title card__title">Дрип-пакеты</h3>
+                <p class="category-card__desc card__desc">Свежий кофе за 3 минуты без оборудования</p>
+                <a href="#" class="category-card__link icon-link icon-link--arrow">
+                  <svg class="icon">
+                    <use href="assets/img/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog">
+        <div class="container">
+          <span class="catalog__label">{каталог}</span>
+          <h2 class="catalog__title">Наш ассортимент</h2>
+
+          <div class="catalog__filters">
+            <div class="catalog__filters-left">
+              <button class="filter-btn">
                 <svg class="icon">
-                  <use href="assets/img/sprite.svg#icon-sort"></use>
+                  <use href="assets/img/sprite.svg#icon-filter"></use>
+                </svg>
+                <span>Все фильтры</span>
+                <svg class="icon icon--sm">
+                  <use href="assets/img/sprite.svg#icon-chevron-down"></use>
+                </svg>
+              </button>
+              <button class="filter-btn">
+                <span>Кислотность</span>
+                <svg class="icon icon--sm">
+                  <use href="assets/img/sprite.svg#icon-chevron-down"></use>
+                </svg>
+              </button>
+              <button class="filter-btn">
+                <span>Плотность</span>
+                <svg class="icon icon--sm">
+                  <use href="assets/img/sprite.svg#icon-chevron-down"></use>
+                </svg>
+              </button>
+              <button class="filter-btn">
+                <span>Горечь</span>
+                <svg class="icon icon--sm">
+                  <use href="assets/img/sprite.svg#icon-chevron-down"></use>
                 </svg>
               </button>
             </div>
 
-            <div class="catalog__grid">
-              <article class="product-card">
-                <div class="product-card__header">
-                  <div class="product-card__tags">
-                    <span class="product-card__tag product-card__tag--hit">Хит</span>
-                    <span class="product-card__tag product-card__tag--recommend">Советуем</span>
-                  </div>
-                  <button class="product-card__favorite">
-                    <svg class="icon">
-                      <use href="assets/img/sprite.svg#icon-favorite"></use>
-                    </svg>
-                  </button>
-                </div>
-                <div class="product-card__image-wrap">
-                  <img src="assets/img/product.png" alt="Кофе" class="product-card__image" />
-                </div>
-                <div class="product-card__chars">
-                  <div class="product-card__char">
-                    <span class="product-card__char-label">Горечь</span>
-                    <div class="product-card__char-bar">
-                      <div class="product-card__char-fill" style="width: 35%"></div>
-                    </div>
-                  </div>
-                  <div class="product-card__char">
-                    <span class="product-card__char-label">Кислотность</span>
-                    <div class="product-card__char-bar">
-                      <div class="product-card__char-fill" style="width: 60%"></div>
-                    </div>
-                  </div>
-                  <div class="product-card__char">
-                    <span class="product-card__char-label">Плотность</span>
-                    <div class="product-card__char-bar">
-                      <div class="product-card__char-fill" style="width: 80%"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-card__body">
-                  <h3 class="product-card__title">Свежеобжаренный кофе Horeca Balanced</h3>
-                  <span class="product-card__origin">Бразилия</span>
-                </div>
-                <div class="product-card__footer">
-                  <button class="product-card__price">
-                    <svg class="icon">
-                      <use href="assets/img/sprite.svg#icon-cart-filled"></use>
-                    </svg>
-                    <span>2 297 ₽</span>
-                  </button>
-                  <div class="product-card__weights">
-                    <button class="product-card__weight">250</button>
-                    <button class="product-card__weight">500</button>
-                    <button class="product-card__weight">1000</button>
-                  </div>
-                </div>
-              </article>
-
-              <article class="product-card">
-                <div class="product-card__header">
-                  <div class="product-card__tags">
-                    <span class="product-card__tag product-card__tag--hit">Хит</span>
-                  </div>
-                  <button class="product-card__favorite">
-                    <svg class="icon">
-                      <use href="assets/img/sprite.svg#icon-favorite"></use>
-                    </svg>
-                  </button>
-                </div>
-                <div class="product-card__image-wrap">
-                  <img src="assets/img/product.png" alt="Кофе" class="product-card__image" />
-                </div>
-                <div class="product-card__chars">
-                  <div class="product-card__char">
-                    <span class="product-card__char-label">Горечь</span>
-                    <div class="product-card__char-bar">
-                      <div class="product-card__char-fill" style="width: 70%"></div>
-                    </div>
-                  </div>
-                  <div class="product-card__char">
-                    <span class="product-card__char-label">Кислотность</span>
-                    <div class="product-card__char-bar">
-                      <div class="product-card__char-fill" style="width: 40%"></div>
-                    </div>
-                  </div>
-                  <div class="product-card__char">
-                    <span class="product-card__char-label">Плотность</span>
-                    <div class="product-card__char-bar">
-                      <div class="product-card__char-fill" style="width: 55%"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-card__body">
-                  <h3 class="product-card__title">Свежеобжаренный кофе Brazil Balanced</h3>
-                  <span class="product-card__origin">Бразилия</span>
-                </div>
-                <div class="product-card__footer">
-                  <button class="product-card__price">
-                    <svg class="icon">
-                      <use href="assets/img/sprite.svg#icon-cart-filled"></use>
-                    </svg>
-                    <span>2 297 ₽</span>
-                  </button>
-                  <div class="product-card__weights">
-                    <button class="product-card__weight">250</button>
-                    <button class="product-card__weight">500</button>
-                    <button class="product-card__weight">1000</button>
-                  </div>
-                </div>
-              </article>
-
-              <article class="product-card">
-                <div class="product-card__header">
-                  <div class="product-card__tags">
-                    <span class="product-card__tag product-card__tag--recommend">Советуем</span>
-                  </div>
-                  <button class="product-card__favorite">
-                    <svg class="icon">
-                      <use href="assets/img/sprite.svg#icon-favorite"></use>
-                    </svg>
-                  </button>
-                </div>
-                <div class="product-card__image-wrap">
-                  <img src="assets/img/product.png" alt="Кофе" class="product-card__image" />
-                </div>
-                <div class="product-card__chars">
-                  <div class="product-card__char">
-                    <span class="product-card__char-label">Горечь</span>
-                    <div class="product-card__char-bar">
-                      <div class="product-card__char-fill" style="width: 20%"></div>
-                    </div>
-                  </div>
-                  <div class="product-card__char">
-                    <span class="product-card__char-label">Кислотность</span>
-                    <div class="product-card__char-bar">
-                      <div class="product-card__char-fill" style="width: 85%"></div>
-                    </div>
-                  </div>
-                  <div class="product-card__char">
-                    <span class="product-card__char-label">Плотность</span>
-                    <div class="product-card__char-bar">
-                      <div class="product-card__char-fill" style="width: 45%"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-card__body">
-                  <h3 class="product-card__title">Свежеобжаренный кофе Colombia Popayan Decaf</h3>
-                  <span class="product-card__origin">Бразилия</span>
-                </div>
-                <div class="product-card__footer">
-                  <button class="product-card__price">
-                    <svg class="icon">
-                      <use href="assets/img/sprite.svg#icon-cart-filled"></use>
-                    </svg>
-                    <span>2 297 ₽</span>
-                  </button>
-                  <div class="product-card__weights">
-                    <button class="product-card__weight">250</button>
-                    <button class="product-card__weight">500</button>
-                    <button class="product-card__weight">1000</button>
-                  </div>
-                </div>
-              </article>
-
-              <article class="product-card">
-                <div class="product-card__header">
-                  <div class="product-card__tags">
-                    <span class="product-card__tag product-card__tag--hit">Хит</span>
-                    <span class="product-card__tag product-card__tag--recommend">Советуем</span>
-                  </div>
-                  <button class="product-card__favorite">
-                    <svg class="icon">
-                      <use href="assets/img/sprite.svg#icon-favorite"></use>
-                    </svg>
-                  </button>
-                </div>
-                <div class="product-card__image-wrap">
-                  <img src="assets/img/product.png" alt="Кофе" class="product-card__image" />
-                </div>
-                <div class="product-card__chars">
-                  <div class="product-card__char">
-                    <span class="product-card__char-label">Горечь</span>
-                    <div class="product-card__char-bar">
-                      <div class="product-card__char-fill" style="width: 50%"></div>
-                    </div>
-                  </div>
-                  <div class="product-card__char">
-                    <span class="product-card__char-label">Кислотность</span>
-                    <div class="product-card__char-bar">
-                      <div class="product-card__char-fill" style="width: 50%"></div>
-                    </div>
-                  </div>
-                  <div class="product-card__char">
-                    <span class="product-card__char-label">Плотность</span>
-                    <div class="product-card__char-bar">
-                      <div class="product-card__char-fill" style="width: 65%"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-card__body">
-                  <h3 class="product-card__title">Свежеобжаренный кофе Horeca Classic</h3>
-                  <span class="product-card__origin">Бразилия</span>
-                </div>
-                <div class="product-card__footer">
-                  <button class="product-card__price">
-                    <svg class="icon">
-                      <use href="assets/img/sprite.svg#icon-cart-filled"></use>
-                    </svg>
-                    <span>2 297 ₽</span>
-                  </button>
-                  <div class="product-card__weights">
-                    <button class="product-card__weight">250</button>
-                    <button class="product-card__weight">500</button>
-                    <button class="product-card__weight">1000</button>
-                  </div>
-                </div>
-              </article>
-            </div>
-
-            <button class="catalog__more">
-              <span>Показать больше</span>
+            <button class="sort-btn">
+              <span>По популярности</span>
               <svg class="icon">
-                <use href="assets/img/sprite.svg#icon-plus"></use>
+                <use href="assets/img/sprite.svg#icon-sort"></use>
               </svg>
             </button>
           </div>
-        </section>
 
-        <section class="about">
-          <div class="container about__inner">
-            <img src="assets/img/about.png" alt="О нас" class="about__image" />
-            <div class="about__content">
-              <span class="about__label">{О нас}</span>
-              <h2 class="about__title">
-                Источник<br />
-                <span class="about__title-accent">настоящего вкуса</span><br />
-                и аромата кофе
-              </h2>
-              <p class="about__text">
-                Бренд «Laboratoria Coffee» занимается поставкой и обжаркой зеленого зерна в сегменте Specialty, а также является инфлюенсером в современной мировой кофейной индустрии
-              </p>
-              <button class="about__btn">
-                <span>Подробнее</span>
-                <svg class="icon">
-                  <use href="assets/img/sprite.svg#icon-arrow-right"></use>
-                </svg>
-              </button>
-            </div>
+          <div class="catalog__grid">
+            <article class="product-card">
+              <div class="product-card__header">
+                <div class="product-card__tags">
+                  <span class="product-card__tag product-card__tag--hit">Хит</span>
+                  <span class="product-card__tag product-card__tag--recommend">Советуем</span>
+                </div>
+                <button class="product-card__favorite">
+                  <svg class="icon">
+                    <use href="assets/img/sprite.svg#icon-favorite"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product-card__image-wrap">
+                <img src="assets/img/product.png" alt="Кофе" class="product-card__image" />
+              </div>
+              <div class="product-card__chars">
+                <div class="product-card__char">
+                  <span class="product-card__char-label">Горечь</span>
+                  <div class="product-card__char-bar">
+                    <div class="product-card__char-fill" style="width: 35%"></div>
+                  </div>
+                </div>
+                <div class="product-card__char">
+                  <span class="product-card__char-label">Кислотность</span>
+                  <div class="product-card__char-bar">
+                    <div class="product-card__char-fill" style="width: 60%"></div>
+                  </div>
+                </div>
+                <div class="product-card__char">
+                  <span class="product-card__char-label">Плотность</span>
+                  <div class="product-card__char-bar">
+                    <div class="product-card__char-fill" style="width: 80%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Свежеобжаренный кофе Horeca Balanced</h3>
+                <span class="product-card__origin">Бразилия</span>
+              </div>
+              <div class="product-card__footer">
+                <button class="product-card__price">
+                  <svg class="icon">
+                    <use href="assets/img/sprite.svg#icon-cart-filled"></use>
+                  </svg>
+                  <span>2 297 ₽</span>
+                </button>
+                <div class="product-card__weights">
+                  <button class="product-card__weight">250</button>
+                  <button class="product-card__weight">500</button>
+                  <button class="product-card__weight">1000</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-card__header">
+                <div class="product-card__tags">
+                  <span class="product-card__tag product-card__tag--hit">Хит</span>
+                </div>
+                <button class="product-card__favorite">
+                  <svg class="icon">
+                    <use href="assets/img/sprite.svg#icon-favorite"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product-card__image-wrap">
+                <img src="assets/img/product.png" alt="Кофе" class="product-card__image" />
+              </div>
+              <div class="product-card__chars">
+                <div class="product-card__char">
+                  <span class="product-card__char-label">Горечь</span>
+                  <div class="product-card__char-bar">
+                    <div class="product-card__char-fill" style="width: 70%"></div>
+                  </div>
+                </div>
+                <div class="product-card__char">
+                  <span class="product-card__char-label">Кислотность</span>
+                  <div class="product-card__char-bar">
+                    <div class="product-card__char-fill" style="width: 40%"></div>
+                  </div>
+                </div>
+                <div class="product-card__char">
+                  <span class="product-card__char-label">Плотность</span>
+                  <div class="product-card__char-bar">
+                    <div class="product-card__char-fill" style="width: 55%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Свежеобжаренный кофе Brazil Balanced</h3>
+                <span class="product-card__origin">Бразилия</span>
+              </div>
+              <div class="product-card__footer">
+                <button class="product-card__price">
+                  <svg class="icon">
+                    <use href="assets/img/sprite.svg#icon-cart-filled"></use>
+                  </svg>
+                  <span>2 297 ₽</span>
+                </button>
+                <div class="product-card__weights">
+                  <button class="product-card__weight">250</button>
+                  <button class="product-card__weight">500</button>
+                  <button class="product-card__weight">1000</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-card__header">
+                <div class="product-card__tags">
+                  <span class="product-card__tag product-card__tag--recommend">Советуем</span>
+                </div>
+                <button class="product-card__favorite">
+                  <svg class="icon">
+                    <use href="assets/img/sprite.svg#icon-favorite"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product-card__image-wrap">
+                <img src="assets/img/product.png" alt="Кофе" class="product-card__image" />
+              </div>
+              <div class="product-card__chars">
+                <div class="product-card__char">
+                  <span class="product-card__char-label">Горечь</span>
+                  <div class="product-card__char-bar">
+                    <div class="product-card__char-fill" style="width: 20%"></div>
+                  </div>
+                </div>
+                <div class="product-card__char">
+                  <span class="product-card__char-label">Кислотность</span>
+                  <div class="product-card__char-bar">
+                    <div class="product-card__char-fill" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="product-card__char">
+                  <span class="product-card__char-label">Плотность</span>
+                  <div class="product-card__char-bar">
+                    <div class="product-card__char-fill" style="width: 45%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Свежеобжаренный кофе Colombia Popayan Decaf</h3>
+                <span class="product-card__origin">Бразилия</span>
+              </div>
+              <div class="product-card__footer">
+                <button class="product-card__price">
+                  <svg class="icon">
+                    <use href="assets/img/sprite.svg#icon-cart-filled"></use>
+                  </svg>
+                  <span>2 297 ₽</span>
+                </button>
+                <div class="product-card__weights">
+                  <button class="product-card__weight">250</button>
+                  <button class="product-card__weight">500</button>
+                  <button class="product-card__weight">1000</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-card__header">
+                <div class="product-card__tags">
+                  <span class="product-card__tag product-card__tag--hit">Хит</span>
+                  <span class="product-card__tag product-card__tag--recommend">Советуем</span>
+                </div>
+                <button class="product-card__favorite">
+                  <svg class="icon">
+                    <use href="assets/img/sprite.svg#icon-favorite"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product-card__image-wrap">
+                <img src="assets/img/product.png" alt="Кофе" class="product-card__image" />
+              </div>
+              <div class="product-card__chars">
+                <div class="product-card__char">
+                  <span class="product-card__char-label">Горечь</span>
+                  <div class="product-card__char-bar">
+                    <div class="product-card__char-fill" style="width: 50%"></div>
+                  </div>
+                </div>
+                <div class="product-card__char">
+                  <span class="product-card__char-label">Кислотность</span>
+                  <div class="product-card__char-bar">
+                    <div class="product-card__char-fill" style="width: 50%"></div>
+                  </div>
+                </div>
+                <div class="product-card__char">
+                  <span class="product-card__char-label">Плотность</span>
+                  <div class="product-card__char-bar">
+                    <div class="product-card__char-fill" style="width: 65%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Свежеобжаренный кофе Horeca Classic</h3>
+                <span class="product-card__origin">Бразилия</span>
+              </div>
+              <div class="product-card__footer">
+                <button class="product-card__price">
+                  <svg class="icon">
+                    <use href="assets/img/sprite.svg#icon-cart-filled"></use>
+                  </svg>
+                  <span>2 297 ₽</span>
+                </button>
+                <div class="product-card__weights">
+                  <button class="product-card__weight">250</button>
+                  <button class="product-card__weight">500</button>
+                  <button class="product-card__weight">1000</button>
+                </div>
+              </div>
+            </article>
           </div>
-        </section>
-      </main>
 
-      <footer class="footer"></footer>
-    </div>
-    <script type="module" src="assets/js/main.js"></script>
-  </body>
+          <button class="catalog__more">
+            <span>Показать больше</span>
+            <svg class="icon">
+              <use href="assets/img/sprite.svg#icon-plus"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container about__inner">
+          <img src="assets/img/image 456.jpg" alt="О нас" class="about__image" />
+          <div class="about__content">
+            <span class="about__label">{О нас}</span>
+            <h2 class="about__title">
+              Источник<br />
+              <span class="about__title-accent">настоящего вкуса</span><br />
+              и аромата кофе
+            </h2>
+            <p class="about__text">
+              Бренд «Laboratoria Coffee» занимается поставкой и обжаркой зеленого зерна в сегменте Specialty, а также
+              является инфлюенсером в современной мировой кофейной индустрии
+            </p>
+            <button class="about__btn">
+              <span>Подробнее</span>
+              <svg class="icon">
+                <use href="assets/img/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"></footer>
+  </div>
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+
 </html>
