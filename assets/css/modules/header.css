@@ -1,0 +1,144 @@
+.header {
+  background-color: var(--color-bg-header);
+  height: 10.4rem; /* 104px */
+  width: 100%;
+  position: relative; /* Чтобы логотип мог абсолютно позиционироваться при необходимости, но здесь используем flex */
+  z-index: 100;
+  transition: height 0.3s ease; /* Плавное изменение высоты */
+}
+
+.header__inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* === LOGO === */
+.logo {
+  position: relative;
+  width: 16rem; /* 160px */
+  height: 3.5rem; /* 35px */
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.logo__icon {
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.logo__icon--large {
+  position: absolute;
+  top: -2rem; /* Подгонка под центр при увеличении */
+  left: -1rem; /* Примерная центровка */
+  width: 18.3rem; /* 183px */
+  height: 12.9rem; /* 129px */
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* === NAVIGATION === */
+.nav__list {
+  display: flex;
+  gap: 3rem; /* Расстояние между пунктами */
+}
+
+.nav__link {
+  font-family: var(--font-accent); /* Oswald */
+  font-weight: 500;
+  font-size: 2rem; /* 20px */
+  line-height: 120%;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  white-space: nowrap;
+}
+
+/* === ACTIONS (RIGHT) === */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* Search Form */
+.search-form {
+  position: relative;
+  width: 20.2rem; /* 202px */
+  height: 4.8rem; /* 48px */
+  transition: width 0.3s ease; /* Плавное расширение */
+}
+
+.search-form__input {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 0.6rem; /* 6px */
+  border: none;
+  padding-left: 1.5rem;
+  padding-right: 4rem; /* Место под иконку */
+
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem; /* 16px */
+  color: #000;
+}
+
+.search-form__input::placeholder {
+  color: var(--color-placeholder); /* #999999 */
+}
+
+.search-form__btn {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.4rem; /* 24px */
+  height: 2.4rem;
+}
+
+.search-form__btn .icon {
+  width: 100%;
+  height: 100%;
+  stroke: black; /* Явно задаем цвет */
+}
+
+/* User Menu Icons */
+.user-menu {
+  display: flex;
+  gap: 2rem;
+}
+
+/* === HOVER EFFECTS (MAGIС) === */
+
+/* 1. Увеличиваем высоту шапки */
+.header:hover {
+  height: 15.3rem; /* 153px */
+}
+
+/* 2. Логика смены логотипа */
+.header:hover .logo {
+  /* Логотип должен оставаться на месте или чуть сдвигаться, завист от макета */
+  width: 18.3rem;
+  height: 12.9rem;
+}
+
+.header:hover .logo__icon--small {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.header:hover .logo__icon--large {
+  opacity: 1;
+  visibility: visible;
+  /* Корректируем позицию большого лого */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 3. Расширение инпута поиска */
+.header:hover .search-form {
+  width: 26.5rem; /* 265px */
+}

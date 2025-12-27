@@ -1,0 +1,75 @@
+/* Сбрасываем box-sizing для всех элементов */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Убираем стандартную стилизацию списков */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Настраиваем скролл, если есть якоря */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Базовые настройки тела страницы */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Ссылки не имеют подчеркивания по дефолту, наследуют цвет */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s; /* Плавность для ховеров */
+}
+
+/* Картинки ведут себя как блоки и ресайзятся */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Наследуем шрифты для форм */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Убираем бордеры у кнопок */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Убираем фокус для мыши, оставляем для клавиатуры (доступность) */
+:focus:not(:focus-visible) {
+  outline: none;
+}
