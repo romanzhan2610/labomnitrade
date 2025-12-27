@@ -1,8 +1,8 @@
 .hero {
   position: relative;
-  height: 100dvh;
-  height: 100vh;
   width: 100%;
+  height: calc(100vw / 1920 * 1080);
+  max-height: 100vh;
   overflow: hidden;
   color: #ffffff;
   background: #1a1a1a;
@@ -23,7 +23,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 14rem;
+  padding-top: 6rem;
   padding-bottom: 6rem;
 }
 
@@ -75,7 +75,7 @@
 }
 
 .btn__icon {
-  width: 1.3rem;
+  width: 1.2rem;
   height: 1rem;
 }
 
@@ -93,6 +93,9 @@
   gap: 2rem;
   width: 41.3rem;
   height: 16.8rem;
+  background: #ffffff;
+  border-radius: 1.2rem;
+  overflow: hidden;
   opacity: 0;
   transform: translateY(2rem);
   transition: opacity 0.6s ease, transform 0.6s ease;
@@ -116,7 +119,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1rem 0;
+  padding: 1.5rem 1.5rem 1.5rem 0;
+  color: var(--color-primary);
 }
 
 .category-card__title {
@@ -152,7 +156,7 @@
 }
 
 .category-card__link .icon {
-  width: 1.3rem;
+  width: 1.2rem;
   height: 1rem;
   transform: rotate(-45deg);
 }
