@@ -29,6 +29,8 @@
   justify-content: center;
   transition: height var(--transition-smooth);
   color: var(--color-primary);
+  --outline-opacity: 0;
+  --outline-scale: 0.8;
 }
 
 .logo__icon {
@@ -133,6 +135,8 @@
 
 .header:hover .logo {
   height: 12.9rem;
+  --outline-opacity: 1;
+  --outline-scale: 1;
 }
 
 .header:hover .logo__icon {
