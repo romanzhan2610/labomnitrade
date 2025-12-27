@@ -5,6 +5,7 @@
   width: 100%;
   overflow: hidden;
   color: #ffffff;
+  background: #1a1a1a;
 }
 
 .hero__video {
@@ -29,6 +30,7 @@
 .hero__content {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 6rem;
 }
 
