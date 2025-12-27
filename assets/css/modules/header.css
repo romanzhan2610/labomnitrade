@@ -1,10 +1,17 @@
 .header {
-  background-color: var(--color-bg-light);
-  height: 10.4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  position: relative;
+  height: 10.4rem;
   z-index: 100;
-  transition: height var(--transition-smooth);
+  background-color: transparent;
+  transition: height var(--transition-smooth), background-color var(--transition-smooth);
+}
+
+.header:hover {
+  height: 15.3rem;
+  background-color: var(--color-bg-light);
 }
 
 .header__inner {
@@ -28,9 +35,16 @@
   align-items: center;
   justify-content: center;
   transition: height var(--transition-smooth);
-  color: var(--color-primary);
+  color: #ffffff;
   --outline-opacity: 0;
   --outline-scale: 0.8;
+}
+
+.header:hover .logo {
+  height: 12.9rem;
+  color: var(--color-primary);
+  --outline-opacity: 1;
+  --outline-scale: 1;
 }
 
 .logo__icon {
@@ -54,9 +68,13 @@
   font-size: 2rem;
   line-height: 120%;
   text-transform: uppercase;
-  color: var(--color-primary);
+  color: #ffffff;
   white-space: nowrap;
   transition: color var(--transition-fast);
+}
+
+.header:hover .nav__link {
+  color: var(--color-primary);
 }
 
 .nav__link:hover {
@@ -109,6 +127,10 @@
   transition: stroke var(--transition-fast);
 }
 
+.header:hover .search-form__btn .icon {
+  stroke: var(--color-primary);
+}
+
 .search-form__btn:hover .icon {
   stroke: var(--color-accent);
 }
@@ -119,24 +141,18 @@
 }
 
 .user-menu__item {
-  color: var(--color-primary);
+  color: #ffffff;
   transition: color var(--transition-fast);
   display: flex;
   align-items: center;
 }
 
+.header:hover .user-menu__item {
+  color: var(--color-primary);
+}
+
 .user-menu__item:hover {
   color: var(--color-accent);
-}
-
-.header:hover {
-  height: 15.3rem;
-}
-
-.header:hover .logo {
-  height: 12.9rem;
-  --outline-opacity: 1;
-  --outline-scale: 1;
 }
 
 .header:hover .logo__icon {

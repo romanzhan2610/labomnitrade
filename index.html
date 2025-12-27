@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -82,7 +82,67 @@
         </div>
       </header>
 
-      <main class="main"></main>
+      <main class="main">
+        <section class="hero">
+          <video class="hero__video" autoplay muted loop playsinline>
+            <source src="assets/video/main-bg.mp4" type="video/mp4" />
+          </video>
+
+          <div class="container hero__inner">
+            <div class="hero__content">
+              <h1 class="hero__title">Обжариваем кофе с 2014 года</h1>
+              <a href="#" class="btn btn--outline">
+                <span>Подробнее</span>
+                <svg class="icon btn__icon">
+                  <use href="assets/img/sprite.svg#icon-arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+
+            <div class="hero__cards">
+              <article class="category-card is-active">
+                <img src="https://placehold.co/168x168/333/fff?text=1" alt="Кофе в зернах" class="category-card__image" />
+                <div class="category-card__body">
+                  <h3 class="category-card__title">Кофе в зернах</h3>
+                  <p class="category-card__desc">Краткое описание категории на несколько строк</p>
+                  <a href="#" class="category-card__link">
+                    <svg class="icon">
+                      <use href="assets/img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <article class="category-card">
+                <img src="https://placehold.co/168x168/333/fff?text=2" alt="Молотый кофе" class="category-card__image" />
+                <div class="category-card__body">
+                  <h3 class="category-card__title">Молотый кофе</h3>
+                  <p class="category-card__desc">Идеально для турки и фильтра</p>
+                  <a href="#" class="category-card__link">
+                    <svg class="icon">
+                      <use href="assets/img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <article class="category-card">
+                <img src="https://placehold.co/168x168/333/fff?text=3" alt="Дрип-пакеты" class="category-card__image" />
+                <div class="category-card__body">
+                  <h3 class="category-card__title">Дрип-пакеты</h3>
+                  <p class="category-card__desc">Свежий кофе за 3 минуты без оборудования</p>
+                  <a href="#" class="category-card__link">
+                    <svg class="icon">
+                      <use href="assets/img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
       <footer class="footer"></footer>
     </div>
     <script type="module" src="assets/js/main.js"></script>
