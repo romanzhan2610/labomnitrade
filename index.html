@@ -10,13 +10,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/modules/catalog.css" />
-  <link rel="stylesheet" href="assets/css/modules/about.css" />
-    <link rel="stylesheet" href="assets/css/modules/why.css" />
-    <link rel="stylesheet" href="assets/css/modules/business.css" />
 </head>
 
 <body>
+  <div class="mobile-stub">
+    <svg class="mobile-stub__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+      <rect x="5" y="2" width="14" height="20" rx="2" />
+      <line x1="12" y1="18" x2="12" y2="18.01" stroke-width="2" />
+    </svg>
+    <h2 class="mobile-stub__title">Адаптивная версия<br />в разработке</h2>
+    <p class="mobile-stub__text">Для просмотра сайта используйте компьютер или ноутбук с разрешением экрана от 1024px</p>
+  </div>
   <div class="wrapper">
     <header class="header">
       <div class="container header__inner">
@@ -144,7 +148,7 @@
 
       <section class="catalog">
         <div class="container">
-          <span class="catalog__label">{каталог}</span>
+          <span class="section__label">{каталог}</span>
           <h2 class="catalog__title">Наш ассортимент</h2>
 
           <div class="catalog__filters">
@@ -415,7 +419,7 @@
         <div class="container about__inner">
           <img src="assets/img/image 456.jpg" alt="О нас" class="about__image" />
           <div class="about__content">
-            <span class="about__label">{О нас}</span>
+            <span class="section__label">{О нас}</span>
             <h2 class="about__title">
               Источник<br />
               <span class="about__title-accent">настоящего вкуса</span><br />
@@ -438,7 +442,7 @@
       <section class="why">
         <div class="container why__inner">
           <div class="why__header">
-            <span class="why__label">{Преимущества}</span>
+            <span class="section__label">{Преимущества}</span>
             <h2 class="why__title">Почему<br />выбирают<br />нас</h2>
           </div>
 

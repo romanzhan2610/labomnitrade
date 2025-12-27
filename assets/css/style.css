@@ -3,6 +3,10 @@
 @import url("./modules/components.css");
 @import url("./modules/header.css");
 @import url("./modules/hero.css");
+@import url("./modules/catalog.css");
+@import url("./modules/about.css");
+@import url("./modules/why.css");
+@import url("./modules/business.css");
 
 :root {
   --font-main: "Roboto", sans-serif;
@@ -30,25 +34,17 @@
 }
 
 html {
-  font-size: calc(100vw / 1920 * 10);
-}
-
-@media (min-width: 2560px) {
-  html {
-    font-size: 13.33px;
-  }
-}
-
-@media (max-width: 768px) {
-  html {
-    font-size: 10px;
-  }
+  font-size: clamp(10px, 0.5208vw, 13.33px);
 }
 
 body {
   font-family: var(--font-main);
   color: var(--color-primary);
   font-size: 1.6rem;
+}
+
+.wrapper {
+  display: block;
 }
 
 .container {
@@ -73,4 +69,85 @@ select:focus {
   border-color: var(--color-accent) !important;
   box-shadow: 0 0 0 2px rgba(80, 136, 165, 0.2);
   transition: all var(--transition-fast);
+}
+
+.section__label {
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #858585;
+  margin-bottom: 1.6rem;
+}
+
+.section__title {
+  font-family: var(--font-accent);
+  font-weight: 700;
+  font-size: 7.8rem;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: 4rem;
+}
+
+.section__title--white {
+  color: var(--color-bg-white);
+}
+
+.section__title-accent {
+  color: var(--color-accent);
+}
+
+.mobile-stub {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: var(--color-bg-white);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem;
+}
+
+.mobile-stub__icon {
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 3rem;
+  opacity: 0.3;
+}
+
+.mobile-stub__title {
+  font-family: var(--font-accent);
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: 1.6rem;
+}
+
+.mobile-stub__text {
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 160%;
+  color: var(--color-placeholder);
+  max-width: 32rem;
+}
+
+@media (max-width: 1023px) {
+  html {
+    font-size: 10px;
+  }
+  
+  .wrapper {
+    display: none;
+  }
+  
+  .mobile-stub {
+    display: flex;
+  }
 }

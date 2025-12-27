@@ -16,15 +16,6 @@
   padding-bottom: 2rem;
 }
 
-.why__label {
-  font-family: var(--font-main);
-  font-weight: 400;
-  font-size: 2rem;
-  line-height: 140%;
-  text-transform: uppercase;
-  color: #858585;
-  margin-bottom: 1.6rem;
-}
 
 .why__title {
   font-family: var(--font-accent);
