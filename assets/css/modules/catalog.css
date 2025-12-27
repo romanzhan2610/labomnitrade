@@ -1,8 +1,7 @@
 .catalog {
-  padding: 6rem 0 8rem;
+  padding: 9rem 0 8rem;
   background: var(--color-bg-light);
 }
-
 
 .catalog__title {
   font-family: var(--font-accent);
@@ -80,8 +79,8 @@
 }
 
 .sort-btn .icon {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .catalog__grid {
@@ -345,6 +344,6 @@
 }
 
 .catalog__more .icon {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 2rem;
+  height: 2rem;
 }

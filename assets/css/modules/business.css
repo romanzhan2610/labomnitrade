@@ -1,13 +1,13 @@
 .business {
   position: relative;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 7;
   background: url('../../img/business-bg.jpg') center/cover no-repeat;
 }
 
 .business__inner {
   position: absolute;
   left: 0;
-  bottom: 6rem;
+  bottom: 9rem;
   max-width: 600px;
 }
 
@@ -28,6 +28,7 @@
   line-height: 160%;
   color: var(--color-bg-white);
   margin-bottom: 4rem;
+  max-width: 60rem;
 }
 
 .business__btn {
@@ -35,7 +36,7 @@
   align-items: center;
   gap: 1.2rem;
   padding: 2rem 3rem;
-  background: transparent;
+  background: var(--color-bg-white);
   border: 1px solid var(--color-bg-white);
   border-radius: var(--radius-sm);
   font-family: var(--font-accent);
@@ -43,7 +44,7 @@
   font-size: 1.6rem;
   line-height: 100%;
   text-transform: uppercase;
-  color: var(--color-bg-white);
+  var(--color-primary);
   cursor: pointer;
   transition: all var(--transition-fast);
 }
@@ -51,6 +52,7 @@
 .business__btn:hover {
   background: var(--color-accent);
   border-color: var(--color-accent);
+  color: var(--color-bg-white);
 }
 
 .business__btn .icon {

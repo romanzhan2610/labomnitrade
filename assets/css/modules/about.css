@@ -1,5 +1,5 @@
 .about {
-  padding: 8rem 0;
+  padding: 9rem 0;
   background: var(--color-bg-white);
 }
 
@@ -47,13 +47,13 @@
   line-height: 160%;
   color: var(--color-primary);
   margin-bottom: 4rem;
-  max-width: 50rem;
+  max-width: 64rem;
 }
 
 .about__btn {
   display: inline-flex;
   align-items: center;
-  gap: 1.2rem;
+  gap: 2.4rem;
   padding: 2rem 3rem;
   background: var(--color-primary);
   border: none;
@@ -73,6 +73,6 @@
 }
 
 .about__btn .icon {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 1.2rem;
+  height: 1rem;
 }

@@ -1,831 +1,1262 @@
 <!doctype html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Myshop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Myshop</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-
-<body>
-  <div class="mobile-stub">
-    <svg class="mobile-stub__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-      <rect x="5" y="2" width="14" height="20" rx="2" />
-      <line x1="12" y1="18" x2="12" y2="18.01" stroke-width="2" />
-    </svg>
-    <h2 class="mobile-stub__title">Адаптивная версия<br />в разработке</h2>
-    <p class="mobile-stub__text">Для просмотра сайта используйте компьютер или ноутбук с разрешением экрана от 1024px</p>
-  </div>
-  <div class="wrapper">
-    <header class="header">
-      <div class="container header__inner">
-        <div class="header__left">
-          <a href="/" class="header__logo logo">
-            <svg class="logo__icon">
-              <use href="assets/img/sprite.svg#icon-logo-composite"></use>
-            </svg>
-          </a>
-
-          <nav class="header__nav nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="#" class="nav__link">Каталог</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">О нас</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Журнал</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Помощник выбора</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Для бизнеса</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-
-        <div class="header__actions">
-          <form class="search-form">
-            <input type="text" class="search-form__input" placeholder="Найти" />
-            <button type="submit" class="search-form__btn">
-              <svg class="icon">
-                <use href="assets/img/sprite.svg#icon-search"></use>
-              </svg>
-            </button>
-          </form>
-
-          <div class="user-menu">
-            <a href="#" class="user-menu__item">
-              <svg class="icon">
-                <use href="assets/img/sprite.svg#icon-user"></use>
+  <body>
+    <div class="mobile-stub">
+      <svg
+        class="mobile-stub__icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+      >
+        <rect x="5" y="2" width="14" height="20" rx="2" />
+        <line x1="12" y1="18" x2="12" y2="18.01" stroke-width="2" />
+      </svg>
+      <h2 class="mobile-stub__title">Адаптивная версия<br />в разработке</h2>
+      <p class="mobile-stub__text">
+        Для просмотра сайта используйте компьютер или ноутбук с разрешением
+        экрана от 1024px
+      </p>
+    </div>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container header__inner">
+          <div class="header__left">
+            <a href="/" class="header__logo logo">
+              <svg class="logo__icon">
+                <use href="assets/img/sprite.svg#icon-logo-composite"></use>
               </svg>
             </a>
-            <a href="#" class="user-menu__item">
-              <svg class="icon">
-                <use href="assets/img/sprite.svg#icon-favorite"></use>
-              </svg>
-            </a>
-            <a href="#" class="user-menu__item">
-              <svg class="icon">
-                <use href="assets/img/sprite.svg#icon-cart"></use>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </header>
 
-    <main class="main">
-      <section class="hero">
-        <video class="hero__video" autoplay muted loop playsinline>
-          <source src="assets/video/main-bg.mp4" type="video/mp4" />
-        </video>
-
-        <div class="container hero__inner">
-          <div class="hero__content">
-            <h1 class="hero__title">Обжариваем кофе с 2014 года</h1>
-            <a href="#" class="btn btn--outline-light">
-              <span>Подробнее</span>
-              <svg class="icon btn__icon">
-                <use href="assets/img/sprite.svg#icon-arrow-right"></use>
-              </svg>
-            </a>
+            <nav class="header__nav nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Каталог</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">О нас</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Журнал</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Помощник выбора</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Для бизнеса</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
           </div>
 
-          <div class="hero__cards">
-            <article class="category-card card is-active">
-              <img src="assets/img/main-card-1.jpg" alt="Кофе в зернах" class="category-card__image card__image" />
-              <div class="category-card__body card__body">
-                <h3 class="category-card__title card__title">Кофе в зернах</h3>
-                <p class="category-card__desc card__desc">Краткое описание категории на несколько строк</p>
-                <a href="#" class="category-card__link icon-link icon-link--arrow">
-                  <svg class="icon">
-                    <use href="assets/img/sprite.svg#icon-arrow-right"></use>
-                  </svg>
-                </a>
-              </div>
-            </article>
-
-            <article class="category-card card">
-              <img src="assets/img/main-card-2.jpg" alt="Молотый кофе" class="category-card__image card__image" />
-              <div class="category-card__body card__body">
-                <h3 class="category-card__title card__title">Молотый кофе</h3>
-                <p class="category-card__desc card__desc">Идеально для турки и фильтра</p>
-                <a href="#" class="category-card__link icon-link icon-link--arrow">
-                  <svg class="icon">
-                    <use href="assets/img/sprite.svg#icon-arrow-right"></use>
-                  </svg>
-                </a>
-              </div>
-            </article>
-
-            <article class="category-card card">
-              <img src="assets/img/main-card-3.jpg" alt="Дрип-пакеты" class="category-card__image card__image" />
-              <div class="category-card__body card__body">
-                <h3 class="category-card__title card__title">Дрип-пакеты</h3>
-                <p class="category-card__desc card__desc">Свежий кофе за 3 минуты без оборудования</p>
-                <a href="#" class="category-card__link icon-link icon-link--arrow">
-                  <svg class="icon">
-                    <use href="assets/img/sprite.svg#icon-arrow-right"></use>
-                  </svg>
-                </a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="catalog">
-        <div class="container">
-          <span class="section__label">{каталог}</span>
-          <h2 class="catalog__title">Наш ассортимент</h2>
-
-          <div class="catalog__filters">
-            <div class="catalog__filters-left">
-              <button class="filter-btn">
+          <div class="header__actions">
+            <form class="search-form">
+              <input
+                type="text"
+                class="search-form__input"
+                placeholder="Найти"
+              />
+              <button type="submit" class="search-form__btn">
                 <svg class="icon">
-                  <use href="assets/img/sprite.svg#icon-filter"></use>
-                </svg>
-                <span>Все фильтры</span>
-                <svg class="icon icon--sm">
-                  <use href="assets/img/sprite.svg#icon-chevron-down"></use>
+                  <use href="assets/img/sprite.svg#icon-search"></use>
                 </svg>
               </button>
-              <button class="filter-btn">
-                <span>Кислотность</span>
-                <svg class="icon icon--sm">
-                  <use href="assets/img/sprite.svg#icon-chevron-down"></use>
+            </form>
+
+            <div class="user-menu">
+              <a href="#" class="user-menu__item">
+                <svg class="icon">
+                  <use href="assets/img/sprite.svg#icon-user"></use>
                 </svg>
-              </button>
-              <button class="filter-btn">
-                <span>Плотность</span>
-                <svg class="icon icon--sm">
-                  <use href="assets/img/sprite.svg#icon-chevron-down"></use>
+              </a>
+              <a href="#" class="user-menu__item">
+                <svg class="icon">
+                  <use href="assets/img/sprite.svg#icon-favorite"></use>
                 </svg>
-              </button>
-              <button class="filter-btn">
-                <span>Горечь</span>
-                <svg class="icon icon--sm">
-                  <use href="assets/img/sprite.svg#icon-chevron-down"></use>
+              </a>
+              <a href="#" class="user-menu__item">
+                <svg class="icon">
+                  <use href="assets/img/sprite.svg#icon-cart"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="hero">
+          <video class="hero__video" autoplay muted loop playsinline>
+            <source src="assets/video/main-bg.mp4" type="video/mp4" />
+          </video>
+
+          <div class="container hero__inner">
+            <div class="hero__content">
+              <h1 class="hero__title">Обжариваем кофе с 2014 года</h1>
+              <a href="#" class="btn btn--outline-light">
+                <span>Подробнее</span>
+                <svg class="icon btn__icon">
+                  <use href="assets/img/sprite.svg#icon-arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+
+            <div class="hero__cards">
+              <article class="category-card card is-active">
+                <img
+                  src="assets/img/main-card-1.jpg"
+                  alt="Кофе в зернах"
+                  class="category-card__image card__image"
+                />
+                <div class="category-card__body card__body">
+                  <h3 class="category-card__title card__title">
+                    Кофе в зернах
+                  </h3>
+                  <p class="category-card__desc card__desc">
+                    Краткое описание категории на несколько строк
+                  </p>
+                  <a
+                    href="#"
+                    class="category-card__link icon-link icon-link--arrow"
+                  >
+                    <svg class="icon">
+                      <use href="assets/img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <article class="category-card card">
+                <img
+                  src="assets/img/main-card-2.jpg"
+                  alt="Молотый кофе"
+                  class="category-card__image card__image"
+                />
+                <div class="category-card__body card__body">
+                  <h3 class="category-card__title card__title">Молотый кофе</h3>
+                  <p class="category-card__desc card__desc">
+                    Идеально для турки и фильтра
+                  </p>
+                  <a
+                    href="#"
+                    class="category-card__link icon-link icon-link--arrow"
+                  >
+                    <svg class="icon">
+                      <use href="assets/img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <article class="category-card card">
+                <img
+                  src="assets/img/main-card-3.jpg"
+                  alt="Дрип-пакеты"
+                  class="category-card__image card__image"
+                />
+                <div class="category-card__body card__body">
+                  <h3 class="category-card__title card__title">Дрип-пакеты</h3>
+                  <p class="category-card__desc card__desc">
+                    Свежий кофе за 3 минуты без оборудования
+                  </p>
+                  <a
+                    href="#"
+                    class="category-card__link icon-link icon-link--arrow"
+                  >
+                    <svg class="icon">
+                      <use href="assets/img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="catalog">
+          <div class="container">
+            <div class="section__label">{каталог}</div>
+            <h2 class="catalog__title">Наш ассортимент</h2>
+
+            <div class="catalog__filters">
+              <div class="catalog__filters-left">
+                <button class="filter-btn">
+                  <svg class="icon">
+                    <use href="assets/img/sprite.svg#icon-filter"></use>
+                  </svg>
+                  <span>Все фильтры</span>
+                  <svg class="icon icon--sm">
+                    <use href="assets/img/sprite.svg#icon-chevron-down"></use>
+                  </svg>
+                </button>
+                <button class="filter-btn">
+                  <span>Кислотность</span>
+                  <svg class="icon icon--sm">
+                    <use href="assets/img/sprite.svg#icon-chevron-down"></use>
+                  </svg>
+                </button>
+                <button class="filter-btn">
+                  <span>Плотность</span>
+                  <svg class="icon icon--sm">
+                    <use href="assets/img/sprite.svg#icon-chevron-down"></use>
+                  </svg>
+                </button>
+                <button class="filter-btn">
+                  <span>Горечь</span>
+                  <svg class="icon icon--sm">
+                    <use href="assets/img/sprite.svg#icon-chevron-down"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <button class="sort-btn">
+                <span>По популярности</span>
+                <svg class="icon">
+                  <use href="assets/img/sprite.svg#icon-sort"></use>
                 </svg>
               </button>
             </div>
 
-            <button class="sort-btn">
-              <span>По популярности</span>
+            <div class="catalog__grid">
+              <article class="product-card">
+                <div class="product-card__header">
+                  <div class="product-card__tags">
+                    <span class="product-card__tag product-card__tag--hit"
+                      >Хит</span
+                    >
+                    <span class="product-card__tag product-card__tag--recommend"
+                      >Советуем</span
+                    >
+                  </div>
+                  <button class="product-card__favorite">
+                    <svg class="icon">
+                      <use href="assets/img/sprite.svg#icon-favorite"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-card__image-wrap">
+                  <img
+                    src="assets/img/product.png"
+                    alt="Кофе"
+                    class="product-card__image"
+                  />
+                </div>
+                <div class="product-card__chars">
+                  <div class="product-card__char">
+                    <span class="product-card__char-label">Горечь</span>
+                    <div class="product-card__char-bar">
+                      <div
+                        class="product-card__char-fill"
+                        style="width: 35%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="product-card__char">
+                    <span class="product-card__char-label">Кислотность</span>
+                    <div class="product-card__char-bar">
+                      <div
+                        class="product-card__char-fill"
+                        style="width: 60%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="product-card__char">
+                    <span class="product-card__char-label">Плотность</span>
+                    <div class="product-card__char-bar">
+                      <div
+                        class="product-card__char-fill"
+                        style="width: 80%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">
+                    Свежеобжаренный кофе Horeca Balanced
+                  </h3>
+                  <span class="product-card__origin">Бразилия</span>
+                </div>
+                <div class="product-card__footer">
+                  <button class="product-card__price">
+                    <svg class="icon">
+                      <use href="assets/img/sprite.svg#icon-cart-filled"></use>
+                    </svg>
+                    <span>2 297 ₽</span>
+                  </button>
+                  <div class="product-card__weights">
+                    <button class="product-card__weight">250</button>
+                    <button class="product-card__weight">500</button>
+                    <button class="product-card__weight">1000</button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__header">
+                  <div class="product-card__tags">
+                    <span class="product-card__tag product-card__tag--hit"
+                      >Хит</span
+                    >
+                  </div>
+                  <button class="product-card__favorite">
+                    <svg class="icon">
+                      <use href="assets/img/sprite.svg#icon-favorite"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-card__image-wrap">
+                  <img
+                    src="assets/img/product.png"
+                    alt="Кофе"
+                    class="product-card__image"
+                  />
+                </div>
+                <div class="product-card__chars">
+                  <div class="product-card__char">
+                    <span class="product-card__char-label">Горечь</span>
+                    <div class="product-card__char-bar">
+                      <div
+                        class="product-card__char-fill"
+                        style="width: 70%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="product-card__char">
+                    <span class="product-card__char-label">Кислотность</span>
+                    <div class="product-card__char-bar">
+                      <div
+                        class="product-card__char-fill"
+                        style="width: 40%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="product-card__char">
+                    <span class="product-card__char-label">Плотность</span>
+                    <div class="product-card__char-bar">
+                      <div
+                        class="product-card__char-fill"
+                        style="width: 55%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">
+                    Свежеобжаренный кофе Brazil Balanced
+                  </h3>
+                  <span class="product-card__origin">Бразилия</span>
+                </div>
+                <div class="product-card__footer">
+                  <button class="product-card__price">
+                    <svg class="icon">
+                      <use href="assets/img/sprite.svg#icon-cart-filled"></use>
+                    </svg>
+                    <span>2 297 ₽</span>
+                  </button>
+                  <div class="product-card__weights">
+                    <button class="product-card__weight">250</button>
+                    <button class="product-card__weight">500</button>
+                    <button class="product-card__weight">1000</button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__header">
+                  <div class="product-card__tags">
+                    <span class="product-card__tag product-card__tag--recommend"
+                      >Советуем</span
+                    >
+                  </div>
+                  <button class="product-card__favorite">
+                    <svg class="icon">
+                      <use href="assets/img/sprite.svg#icon-favorite"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-card__image-wrap">
+                  <img
+                    src="assets/img/product.png"
+                    alt="Кофе"
+                    class="product-card__image"
+                  />
+                </div>
+                <div class="product-card__chars">
+                  <div class="product-card__char">
+                    <span class="product-card__char-label">Горечь</span>
+                    <div class="product-card__char-bar">
+                      <div
+                        class="product-card__char-fill"
+                        style="width: 20%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="product-card__char">
+                    <span class="product-card__char-label">Кислотность</span>
+                    <div class="product-card__char-bar">
+                      <div
+                        class="product-card__char-fill"
+                        style="width: 85%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="product-card__char">
+                    <span class="product-card__char-label">Плотность</span>
+                    <div class="product-card__char-bar">
+                      <div
+                        class="product-card__char-fill"
+                        style="width: 45%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">
+                    Свежеобжаренный кофе Colombia Popayan Decaf
+                  </h3>
+                  <span class="product-card__origin">Бразилия</span>
+                </div>
+                <div class="product-card__footer">
+                  <button class="product-card__price">
+                    <svg class="icon">
+                      <use href="assets/img/sprite.svg#icon-cart-filled"></use>
+                    </svg>
+                    <span>2 297 ₽</span>
+                  </button>
+                  <div class="product-card__weights">
+                    <button class="product-card__weight">250</button>
+                    <button class="product-card__weight">500</button>
+                    <button class="product-card__weight">1000</button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__header">
+                  <div class="product-card__tags">
+                    <span class="product-card__tag product-card__tag--hit"
+                      >Хит</span
+                    >
+                    <span class="product-card__tag product-card__tag--recommend"
+                      >Советуем</span
+                    >
+                  </div>
+                  <button class="product-card__favorite">
+                    <svg class="icon">
+                      <use href="assets/img/sprite.svg#icon-favorite"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-card__image-wrap">
+                  <img
+                    src="assets/img/product.png"
+                    alt="Кофе"
+                    class="product-card__image"
+                  />
+                </div>
+                <div class="product-card__chars">
+                  <div class="product-card__char">
+                    <span class="product-card__char-label">Горечь</span>
+                    <div class="product-card__char-bar">
+                      <div
+                        class="product-card__char-fill"
+                        style="width: 50%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="product-card__char">
+                    <span class="product-card__char-label">Кислотность</span>
+                    <div class="product-card__char-bar">
+                      <div
+                        class="product-card__char-fill"
+                        style="width: 50%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="product-card__char">
+                    <span class="product-card__char-label">Плотность</span>
+                    <div class="product-card__char-bar">
+                      <div
+                        class="product-card__char-fill"
+                        style="width: 65%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">
+                    Свежеобжаренный кофе Horeca Classic
+                  </h3>
+                  <span class="product-card__origin">Бразилия</span>
+                </div>
+                <div class="product-card__footer">
+                  <button class="product-card__price">
+                    <svg class="icon">
+                      <use href="assets/img/sprite.svg#icon-cart-filled"></use>
+                    </svg>
+                    <span>2 297 ₽</span>
+                  </button>
+                  <div class="product-card__weights">
+                    <button class="product-card__weight">250</button>
+                    <button class="product-card__weight">500</button>
+                    <button class="product-card__weight">1000</button>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <button class="catalog__more">
+              <span>Показать больше</span>
               <svg class="icon">
-                <use href="assets/img/sprite.svg#icon-sort"></use>
+                <use href="assets/img/sprite.svg#icon-plus"></use>
               </svg>
             </button>
           </div>
+        </section>
 
-          <div class="catalog__grid">
-            <article class="product-card">
-              <div class="product-card__header">
-                <div class="product-card__tags">
-                  <span class="product-card__tag product-card__tag--hit">Хит</span>
-                  <span class="product-card__tag product-card__tag--recommend">Советуем</span>
-                </div>
-                <button class="product-card__favorite">
-                  <svg class="icon">
-                    <use href="assets/img/sprite.svg#icon-favorite"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="product-card__image-wrap">
-                <img src="assets/img/product.png" alt="Кофе" class="product-card__image" />
-              </div>
-              <div class="product-card__chars">
-                <div class="product-card__char">
-                  <span class="product-card__char-label">Горечь</span>
-                  <div class="product-card__char-bar">
-                    <div class="product-card__char-fill" style="width: 35%"></div>
-                  </div>
-                </div>
-                <div class="product-card__char">
-                  <span class="product-card__char-label">Кислотность</span>
-                  <div class="product-card__char-bar">
-                    <div class="product-card__char-fill" style="width: 60%"></div>
-                  </div>
-                </div>
-                <div class="product-card__char">
-                  <span class="product-card__char-label">Плотность</span>
-                  <div class="product-card__char-bar">
-                    <div class="product-card__char-fill" style="width: 80%"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-card__body">
-                <h3 class="product-card__title">Свежеобжаренный кофе Horeca Balanced</h3>
-                <span class="product-card__origin">Бразилия</span>
-              </div>
-              <div class="product-card__footer">
-                <button class="product-card__price">
-                  <svg class="icon">
-                    <use href="assets/img/sprite.svg#icon-cart-filled"></use>
-                  </svg>
-                  <span>2 297 ₽</span>
-                </button>
-                <div class="product-card__weights">
-                  <button class="product-card__weight">250</button>
-                  <button class="product-card__weight">500</button>
-                  <button class="product-card__weight">1000</button>
-                </div>
-              </div>
-            </article>
-
-            <article class="product-card">
-              <div class="product-card__header">
-                <div class="product-card__tags">
-                  <span class="product-card__tag product-card__tag--hit">Хит</span>
-                </div>
-                <button class="product-card__favorite">
-                  <svg class="icon">
-                    <use href="assets/img/sprite.svg#icon-favorite"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="product-card__image-wrap">
-                <img src="assets/img/product.png" alt="Кофе" class="product-card__image" />
-              </div>
-              <div class="product-card__chars">
-                <div class="product-card__char">
-                  <span class="product-card__char-label">Горечь</span>
-                  <div class="product-card__char-bar">
-                    <div class="product-card__char-fill" style="width: 70%"></div>
-                  </div>
-                </div>
-                <div class="product-card__char">
-                  <span class="product-card__char-label">Кислотность</span>
-                  <div class="product-card__char-bar">
-                    <div class="product-card__char-fill" style="width: 40%"></div>
-                  </div>
-                </div>
-                <div class="product-card__char">
-                  <span class="product-card__char-label">Плотность</span>
-                  <div class="product-card__char-bar">
-                    <div class="product-card__char-fill" style="width: 55%"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-card__body">
-                <h3 class="product-card__title">Свежеобжаренный кофе Brazil Balanced</h3>
-                <span class="product-card__origin">Бразилия</span>
-              </div>
-              <div class="product-card__footer">
-                <button class="product-card__price">
-                  <svg class="icon">
-                    <use href="assets/img/sprite.svg#icon-cart-filled"></use>
-                  </svg>
-                  <span>2 297 ₽</span>
-                </button>
-                <div class="product-card__weights">
-                  <button class="product-card__weight">250</button>
-                  <button class="product-card__weight">500</button>
-                  <button class="product-card__weight">1000</button>
-                </div>
-              </div>
-            </article>
-
-            <article class="product-card">
-              <div class="product-card__header">
-                <div class="product-card__tags">
-                  <span class="product-card__tag product-card__tag--recommend">Советуем</span>
-                </div>
-                <button class="product-card__favorite">
-                  <svg class="icon">
-                    <use href="assets/img/sprite.svg#icon-favorite"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="product-card__image-wrap">
-                <img src="assets/img/product.png" alt="Кофе" class="product-card__image" />
-              </div>
-              <div class="product-card__chars">
-                <div class="product-card__char">
-                  <span class="product-card__char-label">Горечь</span>
-                  <div class="product-card__char-bar">
-                    <div class="product-card__char-fill" style="width: 20%"></div>
-                  </div>
-                </div>
-                <div class="product-card__char">
-                  <span class="product-card__char-label">Кислотность</span>
-                  <div class="product-card__char-bar">
-                    <div class="product-card__char-fill" style="width: 85%"></div>
-                  </div>
-                </div>
-                <div class="product-card__char">
-                  <span class="product-card__char-label">Плотность</span>
-                  <div class="product-card__char-bar">
-                    <div class="product-card__char-fill" style="width: 45%"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-card__body">
-                <h3 class="product-card__title">Свежеобжаренный кофе Colombia Popayan Decaf</h3>
-                <span class="product-card__origin">Бразилия</span>
-              </div>
-              <div class="product-card__footer">
-                <button class="product-card__price">
-                  <svg class="icon">
-                    <use href="assets/img/sprite.svg#icon-cart-filled"></use>
-                  </svg>
-                  <span>2 297 ₽</span>
-                </button>
-                <div class="product-card__weights">
-                  <button class="product-card__weight">250</button>
-                  <button class="product-card__weight">500</button>
-                  <button class="product-card__weight">1000</button>
-                </div>
-              </div>
-            </article>
-
-            <article class="product-card">
-              <div class="product-card__header">
-                <div class="product-card__tags">
-                  <span class="product-card__tag product-card__tag--hit">Хит</span>
-                  <span class="product-card__tag product-card__tag--recommend">Советуем</span>
-                </div>
-                <button class="product-card__favorite">
-                  <svg class="icon">
-                    <use href="assets/img/sprite.svg#icon-favorite"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="product-card__image-wrap">
-                <img src="assets/img/product.png" alt="Кофе" class="product-card__image" />
-              </div>
-              <div class="product-card__chars">
-                <div class="product-card__char">
-                  <span class="product-card__char-label">Горечь</span>
-                  <div class="product-card__char-bar">
-                    <div class="product-card__char-fill" style="width: 50%"></div>
-                  </div>
-                </div>
-                <div class="product-card__char">
-                  <span class="product-card__char-label">Кислотность</span>
-                  <div class="product-card__char-bar">
-                    <div class="product-card__char-fill" style="width: 50%"></div>
-                  </div>
-                </div>
-                <div class="product-card__char">
-                  <span class="product-card__char-label">Плотность</span>
-                  <div class="product-card__char-bar">
-                    <div class="product-card__char-fill" style="width: 65%"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-card__body">
-                <h3 class="product-card__title">Свежеобжаренный кофе Horeca Classic</h3>
-                <span class="product-card__origin">Бразилия</span>
-              </div>
-              <div class="product-card__footer">
-                <button class="product-card__price">
-                  <svg class="icon">
-                    <use href="assets/img/sprite.svg#icon-cart-filled"></use>
-                  </svg>
-                  <span>2 297 ₽</span>
-                </button>
-                <div class="product-card__weights">
-                  <button class="product-card__weight">250</button>
-                  <button class="product-card__weight">500</button>
-                  <button class="product-card__weight">1000</button>
-                </div>
-              </div>
-            </article>
+        <section class="about">
+          <div class="container about__inner">
+            <img
+              src="assets/img/image 456.jpg"
+              alt="О нас"
+              class="about__image"
+            />
+            <div class="about__content">
+              <span class="section__label">{О нас}</span>
+              <h2 class="about__title">
+                Источник<br />
+                <span class="about__title-accent">настоящего вкуса</span><br />
+                и аромата кофе
+              </h2>
+              <p class="about__text">
+                Бренд «Laboratoria Coffee» занимается поставкой и обжаркой
+                зеленого зерна в сегменте Specialty, а также является
+                инфлюенсером в современной мировой кофейной индустрии
+              </p>
+              <button class="about__btn">
+                <span>Подробнее</span>
+                <svg class="icon">
+                  <use href="assets/img/sprite.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
+            </div>
           </div>
+        </section>
 
-          <button class="catalog__more">
-            <span>Показать больше</span>
-            <svg class="icon">
-              <use href="assets/img/sprite.svg#icon-plus"></use>
-            </svg>
-          </button>
-        </div>
-      </section>
+        <section class="why">
+          <div class="container why__inner">
+            <div class="why__header">
+              <span class="section__label">{Преимущества}</span>
+              <h2 class="why__title">Почему<br />выбирают<br />нас</h2>
+            </div>
 
-      <section class="about">
-        <div class="container about__inner">
-          <img src="assets/img/image 456.jpg" alt="О нас" class="about__image" />
-          <div class="about__content">
-            <span class="section__label">{О нас}</span>
-            <h2 class="about__title">
-              Источник<br />
-              <span class="about__title-accent">настоящего вкуса</span><br />
-              и аромата кофе
-            </h2>
-            <p class="about__text">
-              Бренд «Laboratoria Coffee» занимается поставкой и обжаркой зеленого зерна в сегменте Specialty, а также
-              является инфлюенсером в современной мировой кофейной индустрии
+            <div class="why-card why-card--blue">
+              <span class="why-card__number">[01]</span>
+              <span class="why-card__subtitle">Роскошь</span>
+              <span class="why-card__heading">Зерен</span>
+              <p class="why-card__text">
+                Когда каждое зерно становится привилегией, мы начинаем
+                осознавать ценность каждого момента и каждого ресурса. Это не
+                просто о том, чтобы иметь, а о том, чтобы ценить и использовать
+                с умом.
+              </p>
+            </div>
+
+            <div class="why-card why-card--dark">
+              <span class="why-card__number">[02]</span>
+              <span class="why-card__subtitle">Бесплатная доставка</span>
+              <span class="why-card__heading">По России</span>
+              <p class="why-card__text">
+                Мы обеспечиваем быструю и бережную доставку в каждый уголок
+                России. Каждая посылка тщательно упакована, чтобы сохранить
+                свежесть зёрен и подарить Вам безупречный вкус в каждой кофейной
+                чашке.
+              </p>
+            </div>
+
+            <div class="why-card why-card--gray">
+              <span class="why-card__number">[03]</span>
+              <span class="why-card__subtitle">Обжариваем</span>
+              <span class="why-card__heading">Каждый<br />день</span>
+              <p class="why-card__text">
+                Мы обжариваем кофе ежедневно малыми партиями, чтобы каждое зерно
+                доходило до вас максимально свежим. Такой подход гарантирует
+                насыщенный аромат, яркий вкус и безупречное качество в каждой
+                чашке.
+              </p>
+            </div>
+
+            <div class="why-card why-card--image">
+              <img
+                src="assets/img/why.jpg"
+                alt="Обжарка кофе"
+                class="why-card__image"
+              />
+            </div>
+
+            <div class="why-card why-card--light">
+              <span class="why-card__number">[04]</span>
+              <span class="why-card__subtitle">Арабика</span>
+              <span class="why-card__heading">100%</span>
+              <p class="why-card__text">
+                Наш кофе создаётся исключительно из 100% арабики - отборных
+                зёрен премиальных плантаций. Чистый сорт обеспечивает утончённый
+                вкус, сложный аромат и шелковистую текстуру, достойные настоящих
+                ценителей.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="business">
+          <div class="container business__inner">
+            <h2 class="business__title">Преимущества<br />для бизнеса</h2>
+            <p class="business__text">
+              Мы предлагаем бизнесу стабильно высокое качество кофе, выгодные
+              условия сотрудничества, бесперебойные поставки, персональный
+              подход и поддержку
             </p>
-            <button class="about__btn">
-              <span>Подробнее</span>
+            <button class="business__btn">
+              <span>Оптовый ресурс</span>
               <svg class="icon">
                 <use href="assets/img/sprite.svg#icon-arrow-right"></use>
               </svg>
             </button>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="why">
-        <div class="container why__inner">
-          <div class="why__header">
-            <span class="section__label">{Преимущества}</span>
-            <h2 class="why__title">Почему<br />выбирают<br />нас</h2>
+        <section class="articles">
+          <div class="container">
+            <div class="articles__inner">
+              <div class="articles__header">
+                <span class="section__label">{Статьи}</span>
+                <h2 class="articles__title">Совершенство<br />вкуса</h2>
+                <p class="articles__desc">
+                  Эксперты "Лаборатории кофе", делятся происхождением редких
+                  сортов, результатами экспериментов, новыми вкусами и
+                  уникальными технологиями обжарки, чтобы вы всегда были на шаг
+                  ближе к миру премиального кофе.
+                </p>
+              </div>
+
+              <div class="articles__right">
+                <div class="articles__carousel-wrapper">
+                  <div class="articles__carousel" id="articlesCarousel">
+                    <article class="article-card">
+                      <img
+                        src="assets/img/article-1.jpg"
+                        alt="Статья"
+                        class="article-card__image"
+                      />
+                      <div class="article-card__body">
+                        <h3 class="article-card__title">
+                          Лаборатория кофе в Бразилии: путешествие по фермам
+                        </h3>
+                        <span class="article-card__date">01.12.2025</span>
+                        <p class="article-card__excerpt">
+                          7-9 ноября команда Лаборатории - Саша Тищенко и Вика
+                          Ровенская - посетили международную кофейную выставку
+                          International Coffee Week...
+                        </p>
+                      </div>
+                    </article>
+
+                    <article class="article-card">
+                      <img
+                        src="assets/img/article-2.jpg"
+                        alt="Статья"
+                        class="article-card__image"
+                      />
+                      <div class="article-card__body">
+                        <h3 class="article-card__title">
+                          Природный декаф, или что такое Лаурина
+                        </h3>
+                        <span class="article-card__date">01.12.2025</span>
+                        <p class="article-card__excerpt">
+                          В этом сезоне лаурина уже стала появляться в
+                          ассортименте кофейных компаний. Сегодня мы расскажем
+                          вам, что же такое лаурина, почему...
+                        </p>
+                      </div>
+                    </article>
+
+                    <article class="article-card">
+                      <img
+                        src="assets/img/article-3.jpg"
+                        alt="Статья"
+                        class="article-card__image"
+                      />
+                      <div class="article-card__body">
+                        <h3 class="article-card__title">
+                          Лаборатория кофе в Бразилии: путешествие по фермам
+                        </h3>
+                        <span class="article-card__date">01.12.2025</span>
+                        <p class="article-card__excerpt">
+                          7-9 ноября команда Лаборатории - Саша Тищенко и Вика
+                          Ровенская - посетили международную кофейную выставку
+                          International Coffee...
+                        </p>
+                      </div>
+                    </article>
+
+                    <article class="article-card">
+                      <img
+                        src="assets/img/article-4.jpg"
+                        alt="Статья"
+                        class="article-card__image"
+                      />
+                      <div class="article-card__body">
+                        <h3 class="article-card__title">
+                          Секреты идеальной обжарки: от зерна до чашки
+                        </h3>
+                        <span class="article-card__date">25.11.2025</span>
+                        <p class="article-card__excerpt">
+                          Обжарка кофе — это искусство, требующее точности и
+                          опыта. Мы раскрываем секреты того, как добиться
+                          идеального вкуса...
+                        </p>
+                      </div>
+                    </article>
+
+                    <article class="article-card">
+                      <img
+                        src="assets/img/article-5.jpg"
+                        alt="Статья"
+                        class="article-card__image"
+                      />
+                      <div class="article-card__body">
+                        <h3 class="article-card__title">
+                          Эфиопия: родина кофе и её уникальные сорта
+                        </h3>
+                        <span class="article-card__date">18.11.2025</span>
+                        <p class="article-card__excerpt">
+                          Эфиопия считается родиной кофе. Мы отправились в
+                          путешествие по легендарным регионам, чтобы узнать
+                          больше о происхождении...
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+
+                <div class="articles__footer">
+                  <a href="#" class="articles__btn">
+                    <span>Все статьи</span>
+                    <svg class="icon">
+                      <use href="assets/img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                  <div class="articles__controls">
+                    <button
+                      class="articles__arrow articles__arrow--prev"
+                      id="articlesPrev"
+                    >
+                      <svg class="icon">
+                        <use
+                          href="assets/img/sprite.svg#icon-arrow-right"
+                        ></use>
+                      </svg>
+                    </button>
+                    <button
+                      class="articles__arrow articles__arrow--next"
+                      id="articlesNext"
+                    >
+                      <svg class="icon">
+                        <use
+                          href="assets/img/sprite.svg#icon-arrow-right"
+                        ></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="reviews">
+          <div class="container">
+            <div class="reviews__header">
+              <span class="section__label">{Отзывы}</span>
+              <h2 class="section__title">Социальный отклик</h2>
+              <p class="reviews__subtitle">
+                Каждое зерно — это история. В этом разделе мы собрали отзывы
+                людей, которые уже ощутили вкус кофе от Лаборатории кофе.
+              </p>
+            </div>
+
+            <div class="reviews__content">
+              <div class="reviews__left">
+                <div class="reviews__carousel-wrapper">
+                  <div class="reviews__carousel" id="reviewsCarousel">
+                    <article class="review-card">
+                      <div class="review-card__header">
+                        <div class="review-card__avatar">АМ</div>
+                        <div class="review-card__info">
+                          <span class="review-card__name">Андрей Макаров</span>
+                          <span class="review-card__role"
+                            >Директор сети кофеен "Lite"</span
+                          >
+                        </div>
+                      </div>
+                      <div class="review-card__stars">
+                        <svg class="review-card__star" viewBox="0 0 24 24">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                          />
+                        </svg>
+                        <svg class="review-card__star" viewBox="0 0 24 24">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                          />
+                        </svg>
+                        <svg class="review-card__star" viewBox="0 0 24 24">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                          />
+                        </svg>
+                        <svg class="review-card__star" viewBox="0 0 24 24">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                          />
+                        </svg>
+                        <svg class="review-card__star" viewBox="0 0 24 24">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                          />
+                        </svg>
+                      </div>
+                      <p class="review-card__text">
+                        Покупаю кофе от Лаборатории кофе уже не первый раз.
+                        Всегда радует свежая обжарка, плотный аромат и чистый
+                        вкус. Особенно понравился последний заказ — зерно
+                        ровное, раскрывается в эспрессо просто отлично. Доставка
+                        быстрая, упаковка качественная. Чувствуется
+                        профессиональный подход.
+                      </p>
+                      <a href="#" class="review-card__link">
+                        <span>Читать полностью</span>
+                        <svg class="icon">
+                          <use
+                            href="assets/img/sprite.svg#icon-arrow-right"
+                          ></use>
+                        </svg>
+                      </a>
+                    </article>
+
+                    <article class="review-card">
+                      <div class="review-card__header">
+                        <div class="review-card__avatar">АМ</div>
+                        <div class="review-card__info">
+                          <span class="review-card__name">Андрей Макаров</span>
+                          <span class="review-card__role"
+                            >Директор сети кофеен "Lite"</span
+                          >
+                        </div>
+                      </div>
+                      <div class="review-card__stars">
+                        <svg class="review-card__star" viewBox="0 0 24 24">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                          />
+                        </svg>
+                        <svg class="review-card__star" viewBox="0 0 24 24">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                          />
+                        </svg>
+                        <svg class="review-card__star" viewBox="0 0 24 24">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                          />
+                        </svg>
+                        <svg class="review-card__star" viewBox="0 0 24 24">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                          />
+                        </svg>
+                        <svg class="review-card__star" viewBox="0 0 24 24">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                          />
+                        </svg>
+                      </div>
+                      <p class="review-card__text">
+                        Познакомился с продукцией Лаборатории кофе около
+                        полугода назад, и за это время успел попробовать уже
+                        несколько сортов и наблюдать, насколько стабильно и
+                        качественно работает компания.
+                      </p>
+                      <a href="#" class="review-card__link">
+                        <span>Читать полностью</span>
+                        <svg class="icon">
+                          <use
+                            href="assets/img/sprite.svg#icon-arrow-right"
+                          ></use>
+                        </svg>
+                      </a>
+                    </article>
+
+                    <article class="review-card">
+                      <div class="review-card__header">
+                        <div class="review-card__avatar">АМ</div>
+                        <div class="review-card__info">
+                          <span class="review-card__name">Андрей Макаров</span>
+                          <span class="review-card__role"
+                            >Директор сети кофеен "Lite"</span
+                          >
+                        </div>
+                      </div>
+                      <div class="review-card__stars">
+                        <svg class="review-card__star" viewBox="0 0 24 24">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                          />
+                        </svg>
+                        <svg class="review-card__star" viewBox="0 0 24 24">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                          />
+                        </svg>
+                        <svg class="review-card__star" viewBox="0 0 24 24">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                          />
+                        </svg>
+                        <svg class="review-card__star" viewBox="0 0 24 24">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                          />
+                        </svg>
+                        <svg class="review-card__star" viewBox="0 0 24 24">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                          />
+                        </svg>
+                      </div>
+                      <p class="review-card__text">
+                        Покупаю кофе от Лаборатории кофе уже не первый раз.
+                        Всегда радует свежая обжарка, плотный аромат и чистый
+                        вкус. Особенно понравился последний заказ — зерно
+                        ровное, раскрывается в эспрессо просто отлично. Доставка
+                        быстрая, упаковка качественная. Чувствуется
+                        профессиональный подход.
+                      </p>
+                      <a href="#" class="review-card__link">
+                        <span>Читать полностью</span>
+                        <svg class="icon">
+                          <use
+                            href="assets/img/sprite.svg#icon-arrow-right"
+                          ></use>
+                        </svg>
+                      </a>
+                    </article>
+
+                    <article class="review-card">
+                      <div class="review-card__header">
+                        <div class="review-card__avatar">ЕК</div>
+                        <div class="review-card__info">
+                          <span class="review-card__name">Елена Козлова</span>
+                          <span class="review-card__role">Бариста</span>
+                        </div>
+                      </div>
+                      <div class="review-card__stars">
+                        <svg class="review-card__star" viewBox="0 0 24 24">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                          />
+                        </svg>
+                        <svg class="review-card__star" viewBox="0 0 24 24">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                          />
+                        </svg>
+                        <svg class="review-card__star" viewBox="0 0 24 24">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                          />
+                        </svg>
+                        <svg class="review-card__star" viewBox="0 0 24 24">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                          />
+                        </svg>
+                        <svg class="review-card__star" viewBox="0 0 24 24">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                          />
+                        </svg>
+                      </div>
+                      <p class="review-card__text">
+                        Отличное качество зерна! Как профессиональный бариста
+                        могу сказать, что этот кофе раскрывается идеально в
+                        любом способе приготовления.
+                      </p>
+                      <a href="#" class="review-card__link">
+                        <span>Читать полностью</span>
+                        <svg class="icon">
+                          <use
+                            href="assets/img/sprite.svg#icon-arrow-right"
+                          ></use>
+                        </svg>
+                      </a>
+                    </article>
+
+                    <article class="review-card">
+                      <div class="review-card__header">
+                        <div class="review-card__avatar">ИП</div>
+                        <div class="review-card__info">
+                          <span class="review-card__name">Игорь Петров</span>
+                          <span class="review-card__role">Кофеман</span>
+                        </div>
+                      </div>
+                      <div class="review-card__stars">
+                        <svg class="review-card__star" viewBox="0 0 24 24">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                          />
+                        </svg>
+                        <svg class="review-card__star" viewBox="0 0 24 24">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                          />
+                        </svg>
+                        <svg class="review-card__star" viewBox="0 0 24 24">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                          />
+                        </svg>
+                        <svg class="review-card__star" viewBox="0 0 24 24">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                          />
+                        </svg>
+                        <svg class="review-card__star" viewBox="0 0 24 24">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                          />
+                        </svg>
+                      </div>
+                      <p class="review-card__text">
+                        Заказываю уже третий раз. Быстрая доставка, отличное
+                        качество обжарки, приятный сервис. Рекомендую всем
+                        любителям настоящего кофе!
+                      </p>
+                      <a href="#" class="review-card__link">
+                        <span>Читать полностью</span>
+                        <svg class="icon">
+                          <use
+                            href="assets/img/sprite.svg#icon-arrow-right"
+                          ></use>
+                        </svg>
+                      </a>
+                    </article>
+                  </div>
+                </div>
+
+                <div class="reviews__footer">
+                  <a href="#" class="reviews__btn">
+                    <span>Все отзывы</span>
+                    <svg class="icon">
+                      <use href="assets/img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                  <div class="reviews__controls">
+                    <button
+                      class="reviews__arrow reviews__arrow--prev"
+                      id="reviewsPrev"
+                    >
+                      <svg class="icon">
+                        <use
+                          href="assets/img/sprite.svg#icon-arrow-right"
+                        ></use>
+                      </svg>
+                    </button>
+                    <button
+                      class="reviews__arrow reviews__arrow--next"
+                      id="reviewsNext"
+                    >
+                      <svg class="icon">
+                        <use
+                          href="assets/img/sprite.svg#icon-arrow-right"
+                        ></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="reviews__stats">
+                <div class="reviews__rating">
+                  <span class="reviews__rating-number">4.8</span>
+                  <div class="reviews__rating-info">
+                    <svg class="reviews__rating-star" viewBox="0 0 24 24">
+                      <path
+                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                      />
+                    </svg>
+                    <span class="reviews__rating-label"
+                      >средняя<br />оценка</span
+                    >
+                  </div>
+                </div>
+                <div class="reviews__count">
+                  <span class="reviews__count-number">>10.000</span>
+                  <span class="reviews__count-label">отзывов</span>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="why-card why-card--light">
-            <span class="why-card__number">[01]</span>
-            <span class="why-card__subtitle">Роскошь</span>
-            <span class="why-card__heading">Зерен</span>
-            <p class="why-card__text">Когда каждое зерно становится привилегией, мы начинаем осознавать ценность каждого момента и каждого ресурса. Это не просто о том, чтобы иметь, а о том, чтобы ценить и использовать с умом.</p>
-          </div>
-
-          <div class="why-card why-card--dark">
-            <span class="why-card__number">[02]</span>
-            <span class="why-card__subtitle">Бесплатная доставка</span>
-            <span class="why-card__heading">По России</span>
-            <p class="why-card__text">Мы обеспечиваем быструю и бережную доставку в каждый уголок России. Каждая посылка тщательно упакована, чтобы сохранить свежесть зёрен и подарить Вам безупречный вкус в каждой кофейной чашке.</p>
-          </div>
-
-          <div class="why-card why-card--dark">
-            <span class="why-card__number">[03]</span>
-            <span class="why-card__subtitle">Обжариваем</span>
-            <span class="why-card__heading">Каждый<br />день</span>
-            <p class="why-card__text">Мы обжариваем кофе ежедневно малыми партиями, чтобы каждое зерно доходило до вас максимально свежим. Такой подход гарантирует насыщенный аромат, яркий вкус и безупречное качество в каждой чашке.</p>
-          </div>
-
-          <div class="why-card why-card--image">
-            <img src="assets/img/why.jpg" alt="Обжарка кофе" class="why-card__image" />
-          </div>
-
-          <div class="why-card why-card--light">
-            <span class="why-card__number">[04]</span>
-            <span class="why-card__subtitle">Арабика</span>
-            <span class="why-card__heading">100%</span>
-            <p class="why-card__text">Наш кофе создаётся исключительно из 100% арабики - отборных зёрен премиальных плантаций. Чистый сорт обеспечивает утончённый вкус, сложный аромат и шелковистую текстуру, достойные настоящих ценителей.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="business">
-        <div class="container business__inner">
-          <h2 class="business__title">Преимущества<br />для бизнеса</h2>
-          <p class="business__text">Мы предлагаем бизнесу стабильно высокое качество кофе, выгодные условия сотрудничества, бесперебойные поставки, персональный подход и поддержку</p>
-          <button class="business__btn">
-            <span>Оптовый ресурс</span>
-            <svg class="icon">
-              <use href="assets/img/sprite.svg#icon-arrow-right"></use>
+          <div class="reviews__torn-edge">
+            <svg
+              preserveAspectRatio="none"
+              width="100%"
+              height="97px"
+              viewBox="0 0 1920 97"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              style="display: block"
+            >
+              <path
+                d="M0 97H1920V25.3865C1919.67 25.3865 1919.23 25.4347 1919 25.3865C1916.41 24.6682 1913.71 24.109 1910.22 24.297C1909.73 24.3259 1909.11 24.1186 1908.6 23.9981C1906.15 23.4051 1905.37 23.3328 1901.31 23.222C1901.06 23.2134 1900.81 23.1788 1900.59 23.1206C1900.37 23.0624 1900.18 22.9818 1900.03 22.8845C1899.49 22.2481 1898.24 22.118 1896.64 22.1614C1893.56 22.2481 1891.28 21.8095 1889.76 20.826C1888.25 19.8426 1884.52 20.0691 1882.53 19.3026C1879.34 19.3749 1876 18.9844 1872.98 19.6449C1870.25 20.2427 1867.29 19.9438 1864.42 19.9824C1863.42 19.1869 1861.23 20.3053 1860.14 19.6449C1858.61 19.7654 1857.04 19.8377 1855.57 20.0161C1854.1 20.1945 1852.82 20.6139 1851.37 20.6862C1849.92 20.7585 1848.99 20.7682 1848.65 21.3563C1848.54 21.5298 1847.77 21.7275 1847.21 21.7853C1846.21 21.8866 1845.21 22.388 1844.13 21.6986C1842.44 20.6187 1838.69 20.9465 1836.2 20.3728C1836.05 20.3546 1835.89 20.3507 1835.74 20.3615C1835.59 20.3723 1835.45 20.3974 1835.32 20.4355C1833.4 21.4913 1832.31 20.6139 1831.03 20.2186C1830.72 20.1542 1830.37 20.1424 1830.03 20.1848C1828.81 20.9851 1827.35 20.4066 1826.21 20.2186C1825.98 20.1682 1825.72 20.1422 1825.47 20.1422C1825.21 20.1422 1824.95 20.1682 1824.72 20.2186C1823.84 20.331 1823.08 20.5952 1822.58 20.961C1822.37 21.096 1820.98 20.3632 1819.93 20.9031C1819.18 21.2936 1816.86 20.7103 1816.74 21.6407C1816.74 21.9878 1813.96 21.4865 1813.63 22.3735C1813.48 22.7592 1811.02 22.3108 1809.63 22.7302C1808.71 23.0195 1807.06 23.41 1805.82 22.6724C1805.6 22.5374 1804.67 22.5133 1804.06 22.5085C1802.87 22.5085 1802.3 22.4554 1801.68 21.9444C1800.74 21.1731 1798.56 21.2117 1796.96 21.9059C1796.84 21.9754 1796.7 22.0328 1796.54 22.0745C1796.38 22.1162 1796.2 22.1412 1796.01 22.148C1795.83 22.1548 1795.65 22.1432 1795.47 22.114C1795.3 22.0848 1795.14 22.0385 1795 21.9782C1794.72 21.8549 1794.35 21.7867 1793.96 21.7867C1793.58 21.7867 1793.21 21.8549 1792.92 21.9782C1792.05 22.2771 1792.02 22.0119 1791.92 21.7709C1791.92 21.6696 1791.63 21.4816 1791.53 21.4865C1787.69 21.7034 1786.2 20.5223 1783.95 19.8184C1782.87 19.4762 1782.03 18.9314 1780.4 19.6112C1779.64 19.6975 1778.85 19.6602 1778.15 19.5051C1777.4 19.3412 1776.97 19.2014 1776.03 19.4135C1773.25 20.0402 1770.75 19.4135 1768.67 18.9314C1767.28 18.5988 1766.57 18.6759 1766.18 19.0519C1765.62 19.6112 1765.29 19.9534 1763.66 19.3942C1763.11 19.3238 1762.53 19.3459 1762.01 19.4569C1760.12 19.8522 1757.84 20.0306 1756.45 20.7151C1753.74 20.5175 1752.79 21.3756 1751.31 21.8721C1749.83 22.3687 1750.25 21.8432 1749.82 21.6022C1748.71 20.9899 1745.19 20.8019 1743.82 21.3467C1743.07 21.6759 1742.18 21.92 1741.21 22.061C1740.25 22.2021 1739.22 22.2364 1738.23 22.1614C1736.36 22.036 1737.41 22.8459 1736.22 22.9665C1735.77 23.0147 1735.32 23.4485 1734.96 22.9665C1734.03 21.7854 1731.55 21.6841 1728.79 21.7853C1726.35 21.8721 1724.79 21.8769 1723.57 21.4238C1722.35 20.9706 1721.23 21.0767 1719.96 21.067C1718.86 21.067 1717.95 21.8336 1716.68 21.149C1716.35 21.3473 1715.99 21.5357 1715.61 21.713C1715.01 21.9637 1714.49 22.2915 1713.47 21.8095C1713.21 21.6744 1712.89 21.5668 1712.54 21.4932C1712.19 21.4196 1711.81 21.3816 1711.43 21.3816C1711.04 21.3816 1710.66 21.4196 1710.31 21.4932C1709.96 21.5668 1709.64 21.6744 1709.38 21.8095C1707.9 22.3551 1706.05 22.6039 1704.2 22.5037C1703.66 22.4653 1703.11 22.4857 1702.59 22.5633C1702.07 22.6409 1701.59 22.7737 1701.2 22.952C1701.01 23.0484 1700.72 23.2027 1700.51 23.1979C1697.98 23.1304 1696.17 23.3762 1695.92 24.4127C1695.88 24.472 1695.8 24.5249 1695.7 24.5669C1695.6 24.6089 1695.48 24.6387 1695.35 24.6537C1691.35 24.6537 1689.52 25.7818 1687.1 26.5821C1685.72 27.0642 1684.52 27.5462 1682.6 26.8761C1680.53 26.9974 1678.5 27.2104 1676.51 27.5125C1675.85 27.8451 1674.7 27.768 1673.98 27.9174C1671.77 28.3995 1670.21 28.3176 1668.58 27.5945C1666.78 26.8038 1663.83 26.8231 1661.41 26.4616C1660.95 26.4359 1660.49 26.4798 1660.09 26.5869C1658.56 26.9629 1657.78 26.9388 1656.94 26.4567C1656.61 26.2687 1656.24 26.0807 1655.94 25.8879C1655.08 25.3238 1655.09 25.3238 1653.94 25.7818C1653.28 26.0927 1652.42 26.2903 1651.5 26.3442C1650.58 26.3982 1649.65 26.3056 1648.85 26.0807C1647.92 25.875 1647.06 25.609 1646.28 25.2901C1645.46 24.9382 1644.97 25.1117 1644.5 25.3624C1644.03 25.6131 1643.84 25.8686 1643.41 26.0904C1642.98 26.3121 1642.56 26.5098 1641.61 26.182C1640.05 25.6691 1638.43 25.1992 1636.75 24.7743C1636.24 24.6345 1635.45 24.4223 1635.03 24.4754C1634.1 24.6007 1633.82 24.9189 1634.31 25.401L1634.41 25.3721C1634.62 25.5022 1634.83 25.6324 1634.48 25.5552C1634.8 25.8782 1634.66 25.9698 1634.48 26.0373C1634.27 25.8715 1634.08 25.6973 1633.92 25.5167C1631.71 25.4106 1631.02 24.8032 1629.92 24.4609C1628.07 23.8776 1628.05 23.8246 1626.1 24.3982C1625.74 24.5376 1625.3 24.6136 1624.84 24.6136C1624.38 24.6136 1623.93 24.5376 1623.58 24.3982C1622.86 24.5305 1622.19 24.7089 1621.57 24.9285C1619.97 25.4106 1618.16 25.5697 1616.87 25.0973C1615.71 24.7046 1614.28 24.5329 1612.87 24.6152C1611.46 24.7153 1610.02 24.542 1608.87 24.1331C1608.02 23.9435 1607.05 23.9043 1606.15 24.0222C1604.6 24.237 1603.1 24.5312 1601.67 24.8996C1600.17 25.2853 1600.22 25.3335 1597.5 25.3335C1595.5 25.3335 1594.8 25.9023 1593.9 26.37C1593.13 26.8008 1592.11 27.1047 1590.96 27.2388C1589.82 27.3729 1588.62 27.3304 1587.53 27.1172C1584.53 26.4133 1582.04 26.7942 1579.66 27.4257C1578.66 27.6861 1577.75 28.038 1576.66 27.8355C1574.17 27.3534 1571.85 27.9464 1569.46 27.8355C1568.84 27.7848 1568.2 27.8018 1567.59 27.8853C1566.99 27.9687 1566.43 28.1164 1565.96 28.3176C1565.56 28.496 1564.47 28.4526 1563.8 28.5779C1563.11 28.6837 1562.48 28.8652 1561.96 29.1082C1561.77 29.2239 1562.4 29.4987 1562.51 29.7108C1562.62 29.9229 1562.71 30.1929 1562.44 30.3134C1561.35 30.7883 1560.32 31.2972 1559.36 31.8368C1558.55 32.4297 1555.82 32.2321 1555.79 33.0709C1555.79 33.1288 1555.24 33.2493 1555.02 33.23C1552.18 32.989 1551.1 33.8856 1549.25 34.3195C1546.9 34.8739 1544.89 35.3994 1544.76 36.5275C1544.76 36.7203 1543.3 36.8553 1542.76 37.0819C1542.22 37.3084 1541.88 37.6796 1541.3 37.9351C1539.3 38.7884 1537.3 39.6128 1535.3 40.4613C1534.18 40.9433 1533.36 41.2856 1531.67 40.5866C1530.49 40.1045 1528.95 40.4661 1528 40.9337C1527.05 41.4013 1526.12 41.4158 1524.73 40.9674C1523.64 40.6011 1522.23 40.4854 1521.55 39.8394C1521.03 39.3573 1519.63 39.015 1517.66 38.9379C1515.61 38.7778 1513.63 38.4672 1511.78 38.0171C1511.25 37.911 1511.08 37.535 1510.9 37.265C1510.6 36.6509 1510.25 36.0442 1509.83 35.4476C1509.44 35.1114 1508.83 34.8469 1508.1 34.6955C1507.88 34.6454 1507.64 34.6199 1507.4 34.6211C1507.17 34.6223 1506.93 34.6501 1506.72 34.7024C1506.5 34.7547 1506.32 34.83 1506.18 34.9225C1506.03 35.0149 1505.94 35.1221 1505.89 35.2355C1505.89 35.409 1505.98 35.6019 1505.89 35.7706C1505.82 35.8501 1505.71 35.9204 1505.56 35.9763C1505.42 36.0322 1505.26 36.0723 1505.08 36.0936C1504.88 36.0966 1504.67 36.0793 1504.48 36.0428C1504.29 36.0064 1504.11 35.9515 1503.96 35.8815C1503.59 35.5081 1503.01 35.1929 1502.28 34.9721C1501.55 34.7512 1500.71 34.6337 1499.85 34.6329C1498.8 34.5895 1497.09 34.064 1497.1 33.7555C1497.1 33.0854 1496.1 32.9118 1494.86 32.6467C1494.07 32.478 1493.17 32.1646 1493.01 31.8609C1492.41 30.781 1489.39 30.2893 1488.42 29.3058C1488.23 29.1977 1488 29.1098 1487.75 29.0483C1487.49 28.9867 1487.2 28.9529 1486.91 28.9491C1484.09 29.1853 1482.37 28.1151 1479.72 28.2067C1478.16 27.1461 1473.66 27.5993 1472.42 26.3941C1471.28 25.2901 1467.89 24.9189 1466.41 23.9162C1465.62 23.3955 1461.47 23.3087 1460.02 23.7426C1459.09 24.0222 1458.67 23.2943 1457.8 23.7426C1456.51 24.4127 1455.57 23.1063 1454.49 23.5594C1453.16 24.1186 1452.39 23.6751 1451.22 23.5594C1450.66 23.5425 1450.12 23.4398 1449.69 23.2664C1449.26 23.0929 1448.96 22.8578 1448.82 22.5952C1448.32 22.5105 1447.77 22.4988 1447.24 22.5615C1445.69 23.3425 1442.95 23.2123 1440.94 23.651C1440.06 23.839 1438.43 23.5835 1437.14 23.5208C1436.86 23.5286 1436.58 23.5098 1436.32 23.4653C1436.06 23.4209 1435.82 23.3518 1435.61 23.2621C1435.41 23.1723 1435.24 23.0637 1435.12 22.9426C1435.01 22.8215 1434.94 22.6903 1434.93 22.5567C1434.78 22.2176 1434.38 21.9161 1433.8 21.7073C1433.23 21.4984 1432.51 21.3961 1431.8 21.419C1430.15 21.419 1430.21 20.8067 1429.61 20.7682C1428.16 20.6717 1428.1 20.2861 1427.61 19.9775C1427.41 20.3439 1427.19 20.7055 1427.02 21.0719C1427.01 21.2474 1426.96 21.4218 1426.87 21.5925C1426.8 21.6648 1426.35 21.7227 1426.07 21.7275C1425.78 21.7324 1425.49 21.6973 1425.23 21.6263C1425.15 20.3295 1422.38 20.0065 1419.76 19.5581C1418.58 19.2686 1417.48 18.9108 1416.48 18.4927C1415.09 18.0492 1414.63 17.114 1411.78 17.3839C1411.39 17.4225 1410.09 16.9018 1410.11 16.6753C1410.11 16.1257 1409.31 16.0486 1408.25 15.8798C1405.83 15.5648 1403.58 15.0061 1401.64 14.2407C1401.31 14.0875 1400.91 13.9693 1400.47 13.8938C1400.04 13.8183 1399.58 13.7871 1399.12 13.802C1398.47 13.802 1397.37 13.5417 1397.26 13.32C1396.88 12.6692 1395.11 12.4378 1394.41 11.9364C1393.71 11.435 1393.64 10.9722 1392.08 10.6637C1391.32 10.5046 1391.4 9.84414 1390.99 9.42473C1390.58 8.93806 1390.05 8.47557 1389.41 8.04597C1389.3 7.95089 1389.14 7.86936 1388.95 7.80718C1388.76 7.745 1388.54 7.7037 1388.32 7.68621C1388.09 7.66872 1387.86 7.67548 1387.64 7.706C1387.42 7.73651 1387.21 7.79004 1387.04 7.86278C1386.25 8.14239 1386.13 7.96402 1386.04 7.68441C1385.94 7.39476 1385.68 7.12332 1385.29 6.89861C1383.77 6.15139 1383.52 6.16585 1382.06 6.93718C1381.9 7.04899 1381.69 7.14384 1381.45 7.21607C1381.21 7.28829 1380.94 7.33641 1380.66 7.35756C1380.38 7.37871 1380.09 7.37245 1379.82 7.33915C1379.54 7.30585 1379.28 7.2462 1379.06 7.16376C1377.18 6.61901 1375.43 6.00676 1373.43 5.53432C1371.91 5.23833 1370.35 4.99978 1368.75 4.82083C1366.75 5.6452 1365.68 4.86904 1364.53 4.44481C1363.53 4.09771 1362.84 3.92898 1361.68 4.36285C1360.98 4.39242 1360.28 4.3166 1359.68 4.14592C1357.17 3.40833 1354.9 2.5454 1352.22 1.89941C1350.4 1.55278 1348.48 1.33206 1346.52 1.24377C1345.36 1.17622 1344.19 1.17622 1343.03 1.24377C1341.02 1.33845 1339 1.28152 1337.03 1.07505C1334.57 0.766512 1334.36 0.780975 1333.02 1.46071C1332.85 1.53785 1333.02 1.76442 1332.91 1.78853C1331.91 1.94762 1330.97 2.06814 1330 2.20312C1330.42 2.48514 1330.73 2.79999 1330.92 3.13354C1330.92 3.30227 1330.24 3.59152 1329.73 3.64455C1328.23 3.794 1326.42 3.76025 1327 4.63282C1326.67 4.64582 1326.33 4.64582 1326 4.63282C1325.55 3.94344 1324.38 3.56742 1322.48 3.36976C1321.35 3.24924 1320.97 2.44416 1319.39 2.74305C1318.55 2.90214 1318.27 3.40833 1317.54 3.70722C1316.96 3.92686 1316.27 4.06238 1315.54 4.09771C1314.74 4.12181 1313.76 3.83256 1313.13 3.92416C1312.28 4.0495 1311.74 4.40624 1310.96 4.64728C1310.25 4.89061 1309.43 5.05517 1308.56 5.12937C1308.01 5.12937 1307.46 4.73888 1306.78 4.61836C1304.72 4.23269 1303.42 3.35048 1300.68 3.40351C1300.55 3.40351 1300.28 3.36012 1300.28 3.33602C1300.35 2.50201 1297.64 2.50201 1296.93 1.88977C1296.63 1.63426 1295.92 1.44625 1295.38 1.21967C1294.46 0.795437 1293.68 0.805079 1292.58 1.18592C1290.67 1.84638 1287.64 2.09224 1286.94 3.20103C1286.86 3.25573 1286.75 3.30157 1286.63 3.33562C1286.51 3.36966 1286.38 3.39115 1286.24 3.39869C1283.01 3.30227 1281.65 4.36285 1279.33 4.79191C1277.68 5.0908 1277.52 5.65484 1276.4 6.02122C1275.29 6.38761 1275.23 7.02878 1273.49 6.32011C1273.07 6.27024 1272.61 6.2959 1272.22 6.39243C1271.28 7.24089 1269.35 7.67477 1267.41 8.20024C1266.21 8.52323 1265.64 9.2319 1263.96 9.52115C1262.65 9.74773 1261.96 10.2298 1260.76 10.5432C1259.56 10.8565 1259.49 11.5073 1257.76 10.7553C1257 10.4178 1255.82 10.5239 1254.75 10.818C1252.27 11.4977 1248.99 11.2422 1246.23 11.652C1245.46 11.7128 1244.68 11.6536 1243.99 11.4832C1243.46 11.3214 1242.84 11.2487 1242.21 11.2767C1241.59 11.3046 1241 11.4315 1240.55 11.6375C1240.44 11.6877 1240.32 11.7299 1240.19 11.7628C1239.08 11.9692 1237.93 12.1304 1236.76 12.2449C1235.28 12.3462 1235.85 11.7194 1235.07 11.4832C1233.4 10.9674 1233.13 10.8854 1231.85 11.5363C1230.95 12.0417 1230.11 12.5764 1229.36 13.1368C1228.36 13.8262 1228.07 13.8695 1226.15 13.4549C1223.81 12.9729 1221.56 12.4329 1220.86 11.3386C1220.6 10.9337 1219.38 10.5962 1218.47 10.2684C1218.05 10.2106 1217.59 10.2348 1217.19 10.3359C1217.04 10.4161 1216.84 10.4799 1216.63 10.5236C1216.42 10.5672 1216.19 10.5897 1215.96 10.5897C1215.73 10.5897 1215.51 10.5672 1215.29 10.5236C1215.08 10.4799 1214.89 10.4161 1214.73 10.3359C1213.18 9.72217 1211.2 9.4246 1209.2 9.50669C1208.02 9.54043 1207.87 9.28975 1207.89 8.95711C1207.89 8.92818 1207.45 8.87034 1207.21 8.87034C1204.55 8.87034 1202.63 8.78838 1201.75 8.52805C1200.24 8.08513 1198.55 7.81401 1196.79 7.73546C1195.04 7.65691 1193.27 7.77302 1191.62 8.0749C1190.62 8.23398 1188.99 8.40271 1188.98 7.55425C1188.98 6.89861 1187.52 6.4551 1185.98 6.37796C1184.92 6.35071 1183.91 6.14814 1183.12 5.80428C1181.64 5.17276 1180.11 5.3222 1177.96 5.40898C1173.96 5.55842 1170.65 6.55633 1166.47 6.37314C1165.94 6.3673 1165.42 6.3076 1164.94 6.19794C1164.46 6.08829 1164.03 5.93115 1163.69 5.73679C1161.89 4.90761 1160.45 4.15556 1159.87 3.03712C1159.25 1.8271 1156.73 0.800258 1153.87 0C1153.78 0 1153.13 0.106058 1153.11 0.17837C1153.12 0.47766 1153.1 0.777032 1153.04 1.07505C1152.82 1.45589 1151.35 1.63908 1150.04 1.48964C1148.41 1.30645 1147.2 1.53302 1147.04 2.09706C1146.92 2.57915 1147.11 3.06123 1146.98 3.54331C1146.81 3.82392 1146.53 4.08604 1146.16 4.31465C1146.04 4.41106 1145.71 4.46891 1145.47 4.54122C1145.32 4.44481 1145.06 4.35321 1145.04 4.25198C1144.97 4.01575 1145.04 3.76989 1145.04 3.53367C1144.88 3.05159 1144.25 2.96963 1143.11 3.28781C1142.17 3.55295 1141.43 4.13145 1140.26 3.3794C1139.85 3.11426 1139.5 3.25406 1138.82 3.34084C1136.03 3.71686 1134.57 4.61354 1132.61 5.2981C1131.53 5.67412 1131.13 5.52468 1130.42 5.23543C1129.79 4.93562 1129.07 4.68365 1128.29 4.4882C1126.82 4.18448 1125.8 3.61563 1123.28 4.12663C1121.56 4.4882 1118.75 4.18448 1116.43 4.17484C1114.3 3.23478 1111.48 3.61562 1109.2 3.89523C1108.54 4.00346 1107.84 4.04013 1107.15 4.00263C1106.45 3.96513 1105.79 3.85437 1105.2 3.6783C1103.91 3.24337 1102.35 3.04183 1100.78 3.10944C1097.71 3.08178 1094.68 2.77084 1091.86 2.19348C1091.1 2.08297 1090.32 2.03408 1089.53 2.04885C1088.38 2.04885 1087.24 2.09706 1086.4 1.69693C1085.96 1.68912 1085.52 1.73558 1085.13 1.83192C1084.96 1.87048 1084.87 2.1067 1085.01 2.15009C1086.3 2.5695 1086.49 3.22996 1085.87 3.59634C1084.79 4.23751 1082.96 4.71478 1081.44 5.25953C1080.53 4.59425 1079.67 5.39933 1078.76 5.25953C1077.85 5.11973 1077.16 4.59908 1075.84 5.07634C1075.69 5.12937 1074.54 4.76298 1073.78 4.66175C1073.22 4.60131 1072.64 4.61128 1072.1 4.69067C1069.6 5.0908 1067.41 5.03777 1065.6 4.20859C1065.27 4.05175 1064.88 3.9323 1064.44 3.85892C1064 3.78554 1063.53 3.76007 1063.07 3.78435C1061.79 3.8181 1060.07 3.90488 1059.28 3.65901C1057.87 3.23478 1057.59 4.00129 1056.36 3.84703C1055.36 3.73133 1054 4.02058 1052.83 4.1652C1051.66 4.30983 1050.24 4.52194 1048.96 4.70995C1048.68 4.75334 1048.31 4.89315 1048.17 4.86904C1047.09 4.64728 1045.99 4.18931 1044.99 4.21341C1043.72 4.24233 1042.77 4.72442 1041.21 4.21341C1040.34 3.91452 1039.06 3.82774 1038.84 3.24924C1038.18 3.08825 1037.42 3.03903 1036.69 3.10944C1036.32 3.1783 1035.99 3.2821 1035.71 3.41462C1035.42 3.54715 1035.2 3.70568 1035.05 3.88077C1034.91 4.35969 1034.88 4.84484 1034.96 5.32702C1034.96 5.42344 1034.64 5.51021 1034.47 5.60181C1034.22 5.52363 1033.99 5.43831 1033.77 5.3463C1033.49 5.21614 1033.09 5.07634 1033.01 4.92689C1032.71 4.36768 1031.91 4.44481 1031.01 4.70513C1028.8 5.40102 1026.17 5.71081 1023.55 5.58252C1021 5.45718 1018.88 5.95373 1016.46 5.98747C1014.25 6.03455 1012.06 6.15211 1009.89 6.3394C1008.76 6.43099 1007.88 6.71542 1007.94 7.22161C1007.94 7.37588 1007.51 7.53496 1007.28 7.70369C1005.28 6.9179 1005.22 7.77601 1004.5 8.11828C1003.35 8.67268 1001.3 8.48949 999.821 8.83177C998.482 9.07652 997.195 9.38328 995.979 9.74773C995.679 9.88753 995.058 10.0032 994.978 10.143C994.578 11.8207 990.476 11.4157 987.854 11.6809C985.583 11.9075 984.853 11.8496 983.562 12.3944C982.272 12.9391 981.161 13.3585 978.96 13.1802C977.962 13.1339 976.956 13.1339 975.958 13.1802C974.688 13.1802 974.588 13.5755 975.168 13.7683C976.819 14.3082 975.538 14.583 974.618 14.906C974.237 15.0621 973.781 15.1699 973.292 15.2195C972.802 15.2692 972.295 15.2592 971.816 15.1904C968.144 14.9108 964.502 14.5878 960.81 14.2745C958.869 14.1104 956.897 14.0474 954.927 14.0865C952.926 14.125 951.215 14.6457 949.064 14.6505C948.231 14.7215 947.477 14.9314 946.933 15.2435C946.13 15.623 945.485 16.073 945.032 16.5692C944.532 17.1911 944.112 17.6298 942.031 17.1573C941.79 17.0995 940.84 17.3164 940.49 17.4852C940.358 17.5663 940.189 17.632 939.997 17.6771C939.804 17.7223 939.593 17.7457 939.379 17.7457C939.165 17.7457 938.954 17.7223 938.762 17.6771C938.569 17.632 938.401 17.5663 938.269 17.4852C937.844 17.48 937.423 17.5281 937.048 17.625C937.198 18.4542 934.537 18.189 933.776 18.7338C933.146 19.1869 931.675 19.4858 930.705 19.8956C929.969 20.2548 929.29 20.6399 928.674 21.0478C927.953 21.4575 927.673 21.9589 925.672 21.848C924.845 21.8348 924.02 21.9013 923.247 22.0437C922.474 22.1861 921.768 22.4015 921.17 22.6772C920.049 23.0918 918.979 23.4437 918.919 24.1572C918.859 24.7791 917.718 25.401 916.918 25.9843C916.737 26.1096 915.737 26.0759 915.137 26.1337C914.39 26.2077 913.649 26.2896 912.915 26.3796C911.765 26.5242 912.585 27.3438 910.454 27.2522C909.624 27.2184 908.643 27.6571 907.733 27.8837C906.822 28.1103 905.672 28.3947 904.611 28.6406C903.784 28.7748 902.99 28.951 902.24 29.166C901.727 29.3961 901.111 29.5659 900.439 29.662C899.767 29.7582 899.058 29.7782 898.368 29.7204C896.647 29.5806 895.286 29.9326 893.775 30.0868C892.055 29.3203 890.984 29.9326 889.913 30.3423C889.506 30.5153 889.03 30.6472 888.514 30.73C887.999 30.8128 887.454 30.8449 886.912 30.8244C885.331 30.7858 883.71 30.7039 882.269 31.1426C881.919 31.2535 880.819 31.0365 880.048 30.9835C879.488 30.9401 878.658 30.8244 878.387 30.9112C877.387 31.2535 876.627 31.5716 874.926 31.2053C874.345 31.1071 873.722 31.0813 873.115 31.1302C872.508 31.1791 871.937 31.3011 871.454 31.4849C868.312 30.6557 867.282 31.5524 866.061 32.3237C865.871 32.449 865.401 32.5165 865.06 32.6081C863.61 31.7693 861.419 32.9697 859.668 32.3333C858.827 32.0296 857.957 32.3333 858.097 32.8154C858.118 32.9928 858.258 33.1621 858.497 33.2975C859.638 33.8423 857.837 33.741 857.697 33.6783C857.565 33.5961 857.394 33.5303 857.198 33.4864C857.003 33.4426 856.788 33.4219 856.573 33.4261C856.357 33.4304 856.147 33.4594 855.96 33.5109C855.772 33.5623 855.613 33.6346 855.496 33.7217C854.955 34.011 854.495 34.064 853.665 33.7748C853.444 33.6976 852.364 33.9387 851.664 34.0206C850.163 34.199 852.344 35.2451 849.662 35.1342C847.802 35.0571 847.401 35.7513 846.171 36.0068C845.602 36.111 845.006 36.1775 844.4 36.2045C843.399 36.2671 841.858 36.0116 842.119 36.754C841.764 36.7603 841.408 36.749 841.058 36.7203C839.127 36.4503 837.546 36.3877 836.576 37.2747C836.445 37.3887 836.259 37.4855 836.032 37.5564C835.805 37.6273 835.546 37.6702 835.277 37.6811C835.007 37.6921 834.737 37.6709 834.488 37.6193C834.24 37.5677 834.022 37.4875 833.854 37.3856C833.604 37.306 833.3 37.275 833.004 37.2988C830.162 38.1617 828.692 37.2988 827.001 36.701C825 36.0068 825.18 36.0743 823.089 36.8938C820.998 37.7134 819.397 38.5619 818.917 39.6755C818.917 39.7478 817.756 39.7622 817.146 39.8056L815.725 40.495C815.538 40.6094 815.299 40.7018 815.027 40.7653C814.755 40.8289 814.456 40.8619 814.154 40.8619C813.852 40.8619 813.553 40.8289 813.281 40.7653C813.009 40.7018 812.77 40.6094 812.583 40.495C811.643 40.0901 810.512 39.7237 810.102 40.6541C809.791 40.6971 809.462 40.6971 809.151 40.6541C808.621 40.5191 808.211 40.3166 807.711 40.172C807.054 39.9168 806.246 39.7682 805.403 39.7474C804.561 39.7267 803.726 39.8348 803.018 40.0563C801.908 40.442 800.717 40.3889 799.516 40.5384C795.114 41.0205 790.252 40.5962 786.059 41.4351C782.057 41.0012 778.866 41.8834 775.384 42.2932C774.766 42.3734 774.109 42.3496 773.523 42.2257C772.582 41.8063 771.392 41.9605 770.301 41.9557C768.21 41.9557 766.139 42.0039 764.298 41.4736C763.627 41.3028 762.876 41.2165 762.117 41.2229C759.425 41.2567 756.814 41.2808 755.113 40.3215C754.916 40.217 754.645 40.1517 754.353 40.1383C751.161 40.2395 748.81 39.42 745.938 39.1741C745.044 39.1235 744.141 39.1235 743.247 39.1741C742.817 39.1741 742.247 39.42 742.026 39.3766C741.106 39.203 740.245 38.774 739.425 38.7933C738.605 38.8125 738.084 39.473 736.664 39.391C734.963 39.2898 733.172 38.9813 731.661 39.097C730.26 39.1982 729.21 39.8104 727.839 40.0997C725.308 40.6348 725.318 40.5818 723.117 39.6706C722.356 39.3879 721.469 39.1947 720.525 39.1066C720.265 39.1066 719.385 39.5067 719.205 39.7622C718.894 40.2009 718.204 40.1624 717.434 40.0322C716.663 39.902 715.563 39.8201 715.433 39.6465C714.622 38.3305 711.09 38.4944 708.779 38.0508C706.362 37.5955 703.821 37.3113 701.235 37.2072C696.993 37.0336 692.931 36.4262 688.579 36.4985C686.648 35.7465 685.987 36.3732 685.117 36.889C684.246 37.4049 683.956 37.3711 683.116 36.8312C682.525 36.4407 681.855 36.0598 681.265 35.6694C680.174 34.9414 678.413 34.8064 677.613 35.5006C676.612 36.3877 675.102 36.6287 672.77 36.5178C670.769 36.4214 671.37 36.7637 671.96 37.1156C671.37 37.2217 670.709 37.4579 670.209 37.4193C668.548 37.2892 666.977 37.0385 665.326 36.8987C665.026 36.8987 664.146 37.1542 664.176 37.2602C664.656 38.5956 661.064 38.2244 659.483 38.6197C658.749 38.7613 657.941 38.7911 657.17 38.7049C656.399 38.6187 655.702 38.4207 655.171 38.1376C654.967 38.0364 654.731 37.9518 654.471 37.8869C654.126 37.7995 653.772 37.7207 653.41 37.6507C653.41 37.858 653.49 38.0605 653.54 38.263C653.54 38.3931 653.61 38.5185 653.65 38.6438C653.32 38.6438 652.89 38.7017 652.65 38.6438C652.136 38.5081 651.653 38.3465 651.209 38.1617C649.898 37.6796 648.638 37.1976 646.687 37.8821C646.076 37.9858 645.417 38.0042 644.786 37.9351C644.094 37.8921 643.39 37.9225 642.725 38.024C642.06 38.1256 641.448 38.296 640.934 38.5233C640.123 38.8559 639.263 39.3814 637.842 38.7547C636.42 39.0324 635.036 39.3545 633.7 39.7188C632.79 40.0033 632.279 40.1431 631.519 39.7188C631.219 39.5621 630.84 39.4458 630.418 39.3814C629.418 39.2078 628.087 39.4874 628.117 39.8972C628.213 40.4917 627.858 41.0828 627.117 41.5604C626.676 41.8448 626.716 41.8256 625.936 41.6954C622.604 41.1265 622.514 41.1121 619.152 41.6954C618.315 41.8885 617.378 41.9585 616.458 41.8968C615.538 41.8351 614.676 41.6443 613.98 41.3483C613.169 41.0253 612.159 41.0205 612.069 41.5845C611.849 42.8813 608.187 42.9151 606.356 43.6141C604.615 42.8861 603.915 43.6526 602.884 43.9274C601.063 44.4095 600.093 45.2532 597.681 45.499C597.391 45.528 597.191 45.7594 597.061 45.9088C596.321 46.8055 594.289 47.2008 592.058 47.4225C589.827 47.6443 588.496 47.9818 588.056 48.7579C587.826 49.1484 587.456 49.0664 586.906 48.8495C586.165 48.5651 585.585 48.1698 584.364 48.7386C583.593 48.964 582.704 49.0778 581.803 49.0664C578.801 49.1388 576.19 49.428 574.179 50.2765C573.659 50.5031 572.888 50.8743 572.388 50.8453C568.206 50.5947 566.285 51.9541 563.223 52.4748C561.963 52.6917 560.892 53.3136 559.481 52.9569C558.401 52.6724 556.89 53.2509 556.16 52.576C555.709 52.1566 554.619 52.2241 553.808 52.576C553.606 52.6779 553.369 52.7627 553.108 52.8267C551.817 53.1015 551.267 54.0512 549.346 53.627C547.665 53.2509 547.025 53.9885 545.454 53.815C544.113 53.6703 544.323 53.357 543.763 53.1497C543.373 53.0051 543.023 52.4748 542.072 52.8653C540.802 53.3956 539.901 53.4823 539.071 52.7689C538.861 52.5953 538.27 52.3205 538.07 52.3398C535.989 52.5567 535.609 51.5733 533.878 51.607C533.588 51.6238 533.319 51.6886 533.118 51.7902C532.797 51.9541 532.617 52.1566 532.267 52.3109C532.107 52.3832 529.746 53.3666 529.606 53.3763C528.115 53.4872 531.607 54.109 528.945 54.138C527.415 54.138 528.405 54.7068 528.065 54.9864C527.742 55.0444 527.387 55.0444 527.064 54.9864C525.154 54.4658 523.293 53.9162 521.382 53.3956C521.076 53.3662 520.759 53.3813 520.471 53.4389C520.361 53.4389 520.311 53.6366 520.411 53.6752C521.091 53.9451 521.882 54.1572 522.502 54.4513C523.122 54.7454 525.043 54.9334 523.503 55.5746C521.502 56.3652 520.501 56.505 518.7 55.9217C517.459 55.5312 516.699 55.4396 515.448 55.8686C515.088 55.9892 513.668 55.7722 512.837 55.6324C511.881 55.4562 510.955 55.2451 510.066 55.0009C509.115 54.7599 508.695 54.7117 507.975 55.1937C506.634 56.0856 504.533 56.1579 502.532 55.5312C502.021 55.3721 501.621 55.1744 501.091 55.0491C500.764 55.0114 500.425 55.0016 500.09 55.0202C500.09 55.1407 500 55.2709 500.09 55.3769C500.18 55.483 500.601 55.536 500.761 55.6372C500.921 55.7385 500.761 55.6903 499.63 55.9506C498.059 56.3025 496.809 56.5918 494.778 56.3363C494.187 56.264 492.947 56.9292 491.906 57.2137C491.153 57.4314 490.337 57.5939 489.485 57.6957C487.994 57.8597 486.233 58.1778 484.963 58.0091C483.692 57.8404 483.022 57.1847 481.961 56.7942C481.442 56.7195 480.896 56.6998 480.36 56.7364C480.02 57.7006 477.128 57.2185 475.998 57.7006C474.277 57.1655 472.046 58.0959 470.145 57.3727C469.486 57.1207 468.676 56.9771 467.835 56.9632C466.994 56.9494 466.166 57.0659 465.472 57.2956C464.302 57.6283 461.961 57.1028 460.4 57.6668C459.587 57.5717 458.815 57.4086 458.119 57.1847C456.278 56.6159 456.318 56.6062 454.257 57.1124C453.955 57.198 453.604 57.2351 453.256 57.2185C452.57 57.0325 451.792 56.9392 451.005 56.9485C450.218 56.9578 449.45 57.0694 448.784 57.2715C448.235 57.342 447.65 57.3075 447.153 57.1751C445.672 56.587 444.972 57.5511 443.741 57.3631C443.531 57.6234 443.081 57.8886 443.151 58.1393C443.441 59.1757 441.88 58.4382 441.07 58.4478C439.729 58.4478 438.368 58.2598 437.728 59.0504C437.341 59.374 436.754 59.6312 436.049 59.7859C435.344 59.9407 434.556 59.9852 433.796 59.9133C433.276 59.8844 432.675 60.3472 431.965 60.4388C431.445 60.5015 430.624 60.2122 430.074 60.2653C429.364 60.3327 428.323 60.5641 428.243 60.7473C427.863 61.6151 427.072 61.2535 425.682 61.0462C425.051 60.9498 424.201 60.3665 423.13 60.8341C422.899 60.9779 422.726 61.1415 422.62 61.3162C422.505 61.1516 422.325 60.9993 422.09 60.8679C421.457 60.6792 420.728 60.5792 419.984 60.5792C419.24 60.5792 418.51 60.6792 417.878 60.8679C417.472 61.0967 417.107 61.3419 416.787 61.6006C416.087 61.9959 414.576 62.2466 413.866 61.9959C411.774 61.268 408.953 62.0731 406.942 61.4464C406.792 61.403 406.232 61.4994 405.941 61.5669C405.32 61.7582 404.646 61.9074 403.94 62.0104C401.475 62.2238 398.969 62.3046 396.466 62.2514C395.316 62.1888 394.555 61.967 393.665 62.3671C393.355 62.5021 392.965 62.6178 392.604 62.748C391.274 63.2301 390.023 62.0056 388.903 62.6757C388.022 63.206 386.691 62.7865 385.581 63.042C384.23 63.3554 382.819 62.6371 382.689 62.3478C382.309 61.4897 380.188 61.8224 379.107 61.4994C378.784 61.443 378.43 61.443 378.107 61.4994C375.666 62.1309 372.354 62.372 370.843 63.4277C369.893 64.0785 368.412 64.2906 366.721 64.5751C363.475 65.0586 360.297 65.6415 357.206 66.3202C355.725 66.677 353.614 66.677 351.983 66.9759C350.352 67.2747 348.982 67.8099 347.281 68.1136C346.51 68.2534 345.33 68.1136 344.71 68.4799C344.199 68.7204 343.549 68.8809 342.845 68.9402C342.142 68.9996 341.418 68.9551 340.767 68.8126C338.967 68.2341 338.266 68.6728 337.146 69.0199C336.646 69.1478 336.071 69.1903 335.515 69.1404C332.573 67.9545 327.981 67.7424 324.749 66.73C322.798 66.8553 323.438 66.0454 322.338 65.8671C321.814 65.735 321.237 65.6578 320.647 65.6405C318.456 65.8574 318.506 65.8671 317.796 65.6742C316.415 65.2934 314.954 64.6426 313.923 65.8237C313.088 65.9429 312.198 65.9429 311.362 65.8237C309.961 65.5826 308.811 65.1439 307.36 64.9077C306.67 64.792 305.549 64.9077 306.78 65.3368C306.87 65.3705 306.38 65.7224 305.959 65.8188C304.869 66.0551 305.379 65.6212 305.079 65.5248C304.641 65.3901 304.145 65.3059 303.628 65.2789C302.918 65.6164 301.967 65.5778 300.977 65.6212C299.396 65.6839 297.705 66.1033 296.674 65.2741C295.644 64.4449 293.313 65.1488 291.802 64.686C291.262 64.522 289.111 64.7968 288.22 65.0813C287.07 65.4702 285.682 65.662 284.278 65.626C283.697 65.6622 283.147 65.7738 282.687 65.949C281.807 66.2431 281.066 66.595 279.876 66.0792C279.475 65.9647 278.999 65.9285 278.545 65.9779C276.544 66.407 273.873 65.8478 271.982 66.5275C271.461 66.5989 270.914 66.6137 270.381 66.5709C270.001 65.5585 267.149 65.2693 265.868 64.5654C264.616 63.9573 263.036 63.5299 261.306 63.3313C258.675 62.9215 257.754 62.9987 257.184 63.9628C256.844 64.5413 256.674 64.6956 255.093 64.363C252.522 63.823 249.97 64.4304 248.089 64.8161C247.073 65.0801 245.943 65.2255 244.789 65.2406C243.635 65.2556 242.49 65.14 241.446 64.9029C238.784 64.3533 235.893 63.9387 233.131 63.4566C231.874 63.2789 230.672 63.0194 229.56 62.6853C229.052 62.4989 228.455 62.377 227.824 62.3307C227.193 62.2843 226.548 62.3151 225.948 62.4202C223.276 63.0999 221.375 62.5841 219.664 62.0056C218.594 61.6392 218.324 61.8513 217.453 62.0441C215.568 62.4509 213.622 62.7878 211.63 63.0517C211.14 63.1192 210.31 62.8299 209.629 62.748C208.448 62.5949 207.248 62.4758 206.037 62.3912C205.107 62.3382 203.946 62.2852 204.036 62.8733C203.735 63.0021 203.349 63.0756 202.946 63.0806C201.662 62.7373 200.177 62.6106 198.727 62.7207C197.276 62.8308 195.944 63.1713 194.942 63.688C194.861 63.7266 194.481 63.688 194.261 63.688L189.489 63.1529C188.008 63.9966 186.717 62.8444 185.236 63.0806C185.056 63.1095 184.346 62.854 184.156 62.6853C183.806 62.3768 183.616 62.29 183.155 62.6467C182.859 62.8171 182.523 62.9707 182.155 63.1047C181.851 62.9305 181.516 62.7692 181.154 62.6226C180.837 62.4974 180.458 62.4143 180.054 62.3816C178.434 62.2813 176.804 62.2217 175.171 62.2032C173.41 62.2032 171.649 62.3382 169.888 62.3671C168.128 62.3961 166.217 62.3671 164.386 62.3671C163.802 62.4074 163.249 62.5167 162.775 62.6853C161.904 62.9649 161.174 63.3506 159.943 62.8444C159.459 62.8666 159.001 62.9609 158.633 63.1144C158.312 63.3602 158.433 63.6832 158.142 63.9387C157.512 64.5124 156.081 64.604 154.751 64.1749C154.251 64.0262 153.782 63.8551 153.35 63.6639C152.77 63.3843 152.479 63.5338 151.899 63.6639C149.668 64.2665 149.518 64.3003 147.497 63.6639C146.226 63.2686 145.206 63.3458 144.755 63.77C144.125 64.3581 143.275 64.5365 141.594 64.5028C140.753 64.5028 139.793 64.8595 139.032 64.8017C138.193 64.6773 137.427 64.4574 136.801 64.1605C135.731 63.7555 135.1 64.7727 134.02 64.2473C133.66 64.0509 133.201 63.9032 132.687 63.8187C132.173 63.7341 131.622 63.7157 131.088 63.7652C129.948 63.8616 129.357 63.5338 128.517 63.3891C126.646 63.1051 124.742 62.8749 122.814 62.6998C122.674 62.6998 122.204 62.8396 122.204 62.9167C122.134 63.7121 121.293 63.2879 120.683 63.0372C120.393 62.9215 120.453 62.6901 120.153 62.5841C118.592 62.0345 117.581 61.3548 114.84 61.186C111.898 61.0028 109.257 60.111 106.055 60.892C104.665 60.2942 103.294 61.0559 101.873 60.892C100.757 60.7226 99.591 60.6428 98.4213 60.6557C97.2707 60.7184 96.2601 61.1667 95.1195 61.215C93.7188 61.2728 92.9884 61.3258 93.1185 61.9091C93.1184 62.2 92.9059 62.4816 92.5182 62.7046C92.3278 62.7703 92.1116 62.8166 91.8828 62.8406C91.6539 62.8647 91.4174 62.8659 91.1875 62.8444C90.5535 62.6626 89.9512 62.4562 89.3866 62.2273C88.0459 61.7886 87.6657 61.8609 87.1554 62.5985C87.0035 62.7494 86.8227 62.893 86.6151 63.0276C86.5257 62.8527 86.3622 62.6885 86.1349 62.5455C85.8143 62.4188 85.4257 62.3386 85.0143 62.3141C84.3486 62.2851 83.6789 62.2851 83.0132 62.3141C81.6425 62.3479 82.553 61.1619 80.562 61.6778C79.8416 61.8658 79.7916 62.3623 78.4408 62.4009C78.0306 62.4009 77.6704 62.6323 77.2502 62.6564C76.6399 62.6853 75.9295 62.6564 76.6199 62.3045C76.9201 62.1502 77.0701 61.7501 76.9301 61.726C76.0557 61.5534 75.1307 61.4477 74.1886 61.4126C72.9513 61.4202 71.7157 61.4589 70.4867 61.5283C69.7463 60.6365 68.4857 60.6365 66.6747 61.1908C66.4446 61.2632 65.5641 60.9932 65.0139 61.0125C63.5731 61.0559 62.6026 60.0483 60.8517 60.7763C60.4919 60.7414 60.1512 60.6708 59.8512 60.569C58.4805 60.0146 56.4094 60.0869 54.7085 59.8169C53.2878 59.6 51.4868 60.0146 49.996 59.5614C48.7454 59.1854 46.6343 59.735 45.5737 59.0793C45.1035 59.1854 44.4532 59.2577 44.223 59.412C43.9929 59.5662 44.223 59.7832 43.1625 59.653C41.2266 59.3525 39.1781 59.2587 37.1594 59.3782C35.9894 59.4515 34.8004 59.3603 33.7355 59.1157C32.6705 58.8711 31.7748 58.4835 31.1562 57.9995C30.4118 57.3147 29.3035 56.7375 27.9446 56.3266C27.4143 56.1868 26.4138 55.9747 26.2537 56.0277C25.7725 56.2242 25.3924 56.4717 25.1431 56.7509C24.8229 57.0401 25.7734 57.4499 24.3327 57.6524C22.8919 57.8548 20.7008 58.3321 19.9104 57.9561C19.3628 57.6887 18.6932 57.4867 17.955 57.3662C17.2167 57.2457 16.4302 57.21 15.6582 57.2619C15.4981 57.2619 15.368 56.963 15.1179 56.828C13.0468 55.6662 9.95518 55.1359 6.23325 55.1455C4.44231 55.1455 3.03158 55.0491 1.90099 54.5236C1.50793 54.4181 1.04499 54.3904 0.610318 54.4465C0.464681 54.4991 0.347026 54.5676 0.267018 54.6464C0.18701 54.7252 0.146933 54.812 0.150078 54.8997C0.0900469 55.3817 0.150078 55.8638 0.150078 56.3459L0 97Z"
+                fill="#040404"
+              />
             </svg>
-          </button>
-        </div>
-      </section>
-
-      <section class="articles">
-        <div class="container">
-          <div class="articles__inner">
-            <div class="articles__header">
-              <span class="section__label">{Статьи}</span>
-              <h2 class="articles__title">Совершенство<br />вкуса</h2>
-              <p class="articles__desc">Эксперты "Лаборатории кофе", делятся происхождением редких сортов, результатами экспериментов, новыми вкусами и уникальными технологиями обжарки, чтобы вы всегда были на шаг ближе к миру премиального кофе.</p>
-            </div>
-
-            <div class="articles__right">
-              <div class="articles__carousel-wrapper">
-                <div class="articles__carousel" id="articlesCarousel">
-                  <article class="article-card">
-                    <img src="assets/img/article-1.jpg" alt="Статья" class="article-card__image" />
-                    <div class="article-card__body">
-                      <h3 class="article-card__title">Лаборатория кофе в Бразилии: путешествие по фермам</h3>
-                      <span class="article-card__date">01.12.2025</span>
-                      <p class="article-card__excerpt">7-9 ноября команда Лаборатории - Саша Тищенко и Вика Ровенская - посетили международную кофейную выставку International Coffee Week...</p>
-                    </div>
-                  </article>
-
-                  <article class="article-card">
-                    <img src="assets/img/article-2.jpg" alt="Статья" class="article-card__image" />
-                    <div class="article-card__body">
-                      <h3 class="article-card__title">Природный декаф, или что такое Лаурина</h3>
-                      <span class="article-card__date">01.12.2025</span>
-                      <p class="article-card__excerpt">В этом сезоне лаурина уже стала появляться в ассортименте кофейных компаний. Сегодня мы расскажем вам, что же такое лаурина, почему...</p>
-                    </div>
-                  </article>
-
-                  <article class="article-card">
-                    <img src="assets/img/article-3.jpg" alt="Статья" class="article-card__image" />
-                    <div class="article-card__body">
-                      <h3 class="article-card__title">Лаборатория кофе в Бразилии: путешествие по фермам</h3>
-                      <span class="article-card__date">01.12.2025</span>
-                      <p class="article-card__excerpt">7-9 ноября команда Лаборатории - Саша Тищенко и Вика Ровенская - посетили международную кофейную выставку International Coffee...</p>
-                    </div>
-                  </article>
-
-                  <article class="article-card">
-                    <img src="assets/img/article-4.jpg" alt="Статья" class="article-card__image" />
-                    <div class="article-card__body">
-                      <h3 class="article-card__title">Секреты идеальной обжарки: от зерна до чашки</h3>
-                      <span class="article-card__date">25.11.2025</span>
-                      <p class="article-card__excerpt">Обжарка кофе — это искусство, требующее точности и опыта. Мы раскрываем секреты того, как добиться идеального вкуса...</p>
-                    </div>
-                  </article>
-
-                  <article class="article-card">
-                    <img src="assets/img/article-5.jpg" alt="Статья" class="article-card__image" />
-                    <div class="article-card__body">
-                      <h3 class="article-card__title">Эфиопия: родина кофе и её уникальные сорта</h3>
-                      <span class="article-card__date">18.11.2025</span>
-                      <p class="article-card__excerpt">Эфиопия считается родиной кофе. Мы отправились в путешествие по легендарным регионам, чтобы узнать больше о происхождении...</p>
-                    </div>
-                  </article>
-                </div>
-              </div>
-
-              <div class="articles__footer">
-                <a href="#" class="articles__btn">
-                  <span>Все статьи</span>
-                  <svg class="icon">
-                    <use href="assets/img/sprite.svg#icon-arrow-right"></use>
-                  </svg>
-                </a>
-                <div class="articles__controls">
-                  <button class="articles__arrow articles__arrow--prev" id="articlesPrev">
-                    <svg class="icon">
-                      <use href="assets/img/sprite.svg#icon-arrow-right"></use>
-                    </svg>
-                  </button>
-                  <button class="articles__arrow articles__arrow--next" id="articlesNext">
-                    <svg class="icon">
-                      <use href="assets/img/sprite.svg#icon-arrow-right"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </main>
 
-      <section class="reviews">
-        <div class="container">
-          <div class="reviews__header">
-            <span class="section__label">{Отзывы}</span>
-            <h2 class="section__title">Социальный отклик</h2>
-            <p class="reviews__subtitle">Каждое зерно — это история. В этом разделе мы собрали отзывы людей, которые уже ощутили вкус кофе от Лаборатории кофе.</p>
-          </div>
-
-          <div class="reviews__content">
-            <div class="reviews__left">
-              <div class="reviews__carousel-wrapper">
-                <div class="reviews__carousel" id="reviewsCarousel">
-                  <article class="review-card">
-                    <div class="review-card__header">
-                      <div class="review-card__avatar">АМ</div>
-                      <div class="review-card__info">
-                        <span class="review-card__name">Андрей Макаров</span>
-                        <span class="review-card__role">Директор сети кофеен "Lite"</span>
-                      </div>
-                    </div>
-                    <div class="review-card__stars">
-                      <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                      <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                      <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                      <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                      <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                    </div>
-                    <p class="review-card__text">Покупаю кофе от Лаборатории кофе уже не первый раз. Всегда радует свежая обжарка, плотный аромат и чистый вкус. Особенно понравился последний заказ — зерно ровное, раскрывается в эспрессо просто отлично. Доставка быстрая, упаковка качественная. Чувствуется профессиональный подход.</p>
-                    <a href="#" class="review-card__link">
-                      <span>Читать полностью</span>
-                      <svg class="icon"><use href="assets/img/sprite.svg#icon-arrow-right"></use></svg>
-                    </a>
-                  </article>
-
-                  <article class="review-card">
-                    <div class="review-card__header">
-                      <div class="review-card__avatar">АМ</div>
-                      <div class="review-card__info">
-                        <span class="review-card__name">Андрей Макаров</span>
-                        <span class="review-card__role">Директор сети кофеен "Lite"</span>
-                      </div>
-                    </div>
-                    <div class="review-card__stars">
-                      <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                      <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                      <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                      <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                      <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                    </div>
-                    <p class="review-card__text">Познакомился с продукцией Лаборатории кофе около полугода назад, и за это время успел попробовать уже несколько сортов и наблюдать, насколько стабильно и качественно работает компания.</p>
-                    <a href="#" class="review-card__link">
-                      <span>Читать полностью</span>
-                      <svg class="icon"><use href="assets/img/sprite.svg#icon-arrow-right"></use></svg>
-                    </a>
-                  </article>
-
-                  <article class="review-card">
-                    <div class="review-card__header">
-                      <div class="review-card__avatar">АМ</div>
-                      <div class="review-card__info">
-                        <span class="review-card__name">Андрей Макаров</span>
-                        <span class="review-card__role">Директор сети кофеен "Lite"</span>
-                      </div>
-                    </div>
-                    <div class="review-card__stars">
-                      <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                      <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                      <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                      <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                      <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                    </div>
-                    <p class="review-card__text">Покупаю кофе от Лаборатории кофе уже не первый раз. Всегда радует свежая обжарка, плотный аромат и чистый вкус. Особенно понравился последний заказ — зерно ровное, раскрывается в эспрессо просто отлично. Доставка быстрая, упаковка качественная. Чувствуется профессиональный подход.</p>
-                    <a href="#" class="review-card__link">
-                      <span>Читать полностью</span>
-                      <svg class="icon"><use href="assets/img/sprite.svg#icon-arrow-right"></use></svg>
-                    </a>
-                  </article>
-
-                  <article class="review-card">
-                    <div class="review-card__header">
-                      <div class="review-card__avatar">ЕК</div>
-                      <div class="review-card__info">
-                        <span class="review-card__name">Елена Козлова</span>
-                        <span class="review-card__role">Бариста</span>
-                      </div>
-                    </div>
-                    <div class="review-card__stars">
-                      <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                      <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                      <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                      <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                      <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                    </div>
-                    <p class="review-card__text">Отличное качество зерна! Как профессиональный бариста могу сказать, что этот кофе раскрывается идеально в любом способе приготовления.</p>
-                    <a href="#" class="review-card__link">
-                      <span>Читать полностью</span>
-                      <svg class="icon"><use href="assets/img/sprite.svg#icon-arrow-right"></use></svg>
-                    </a>
-                  </article>
-
-                  <article class="review-card">
-                    <div class="review-card__header">
-                      <div class="review-card__avatar">ИП</div>
-                      <div class="review-card__info">
-                        <span class="review-card__name">Игорь Петров</span>
-                        <span class="review-card__role">Кофеман</span>
-                      </div>
-                    </div>
-                    <div class="review-card__stars">
-                      <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                      <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                      <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                      <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                      <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                    </div>
-                    <p class="review-card__text">Заказываю уже третий раз. Быстрая доставка, отличное качество обжарки, приятный сервис. Рекомендую всем любителям настоящего кофе!</p>
-                    <a href="#" class="review-card__link">
-                      <span>Читать полностью</span>
-                      <svg class="icon"><use href="assets/img/sprite.svg#icon-arrow-right"></use></svg>
-                    </a>
-                  </article>
-                </div>
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="footer-top__content">
+              <div class="footer-top__column">
+                <span class="footer-top__label">{Каталог}</span>
+                <nav class="footer-top__nav">
+                  <a href="#" class="footer-top__link">Кофе</a>
+                  <a href="#" class="footer-top__link">Какао</a>
+                  <a href="#" class="footer-top__link">Чай-латте</a>
+                  <a href="#" class="footer-top__link">Сиропы</a>
+                  <a href="#" class="footer-top__link">Аксессуары</a>
+                </nav>
               </div>
 
-              <div class="reviews__footer">
-                <a href="#" class="reviews__btn">
-                  <span>Все отзывы</span>
-                  <svg class="icon"><use href="assets/img/sprite.svg#icon-arrow-right"></use></svg>
-                </a>
-                <div class="reviews__controls">
-                  <button class="reviews__arrow reviews__arrow--prev" id="reviewsPrev">
-                    <svg class="icon"><use href="assets/img/sprite.svg#icon-arrow-right"></use></svg>
-                  </button>
-                  <button class="reviews__arrow reviews__arrow--next" id="reviewsNext">
-                    <svg class="icon"><use href="assets/img/sprite.svg#icon-arrow-right"></use></svg>
-                  </button>
-                </div>
+              <div class="footer-top__column">
+                <span class="footer-top__label">{Компания}</span>
+                <nav class="footer-top__nav">
+                  <a href="#" class="footer-top__link">Контакты</a>
+                  <a href="#" class="footer-top__link">Достижения</a>
+                  <a href="#" class="footer-top__link">Где попробовать</a>
+                  <a href="#" class="footer-top__link">Наше производство</a>
+                </nav>
               </div>
-            </div>
 
-            <div class="reviews__stats">
-              <div class="reviews__rating">
-                <span class="reviews__rating-number">4.8</span>
-                <div class="reviews__rating-info">
-                  <svg class="reviews__rating-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <span class="reviews__rating-label">средняя<br />оценка</span>
-                </div>
+              <div class="footer-top__column">
+                <span class="footer-top__label">{Помощь}</span>
+                <nav class="footer-top__nav">
+                  <a href="#" class="footer-top__link">Сообщество</a>
+                  <a href="#" class="footer-top__link">Частые вопросы</a>
+                  <a href="#" class="footer-top__link">Как выбрать кофе?</a>
+                  <a href="#" class="footer-top__link">Журнал о кофе</a>
+                  <a href="#" class="footer-top__link">Доставка и оплата</a>
+                  <a href="#" class="footer-top__link">Гарантия на товар</a>
+                </nav>
               </div>
-              <div class="reviews__count">
-                <span class="reviews__count-number">>10.000</span>
-                <span class="reviews__count-label">отзывов</span>
+
+              <div class="footer-top__right">
+                <div class="footer-top__social-block">
+                  <span class="footer-top__label">{Мы на связи}</span>
+                  <div class="footer-top__social">
+                    <a href="#" class="footer-top__social-link">
+                      <svg class="icon" viewBox="0 0 24 24">
+                        <path
+                          d="M22.54 6.42a8.68 8.68 0 0 1-2.5.69 4.36 4.36 0 0 0 1.91-2.4 8.73 8.73 0 0 1-2.77 1.06 4.35 4.35 0 0 0-7.53 2.97 4.47 4.47 0 0 0 .11.99A12.35 12.35 0 0 1 2.8 5.08a4.35 4.35 0 0 0 1.35 5.8 4.31 4.31 0 0 1-1.97-.54v.05a4.35 4.35 0 0 0 3.49 4.27 4.35 4.35 0 0 1-1.96.07 4.36 4.36 0 0 0 4.07 3.02A8.73 8.73 0 0 1 2 19.54a12.3 12.3 0 0 0 6.67 1.95c8 0 12.38-6.63 12.38-12.38 0-.19 0-.37-.01-.56a8.85 8.85 0 0 0 2.17-2.25l-.67.12z"
+                        />
+                      </svg>
+                    </a>
+                    <a href="#" class="footer-top__social-link">
+                      <svg class="icon" viewBox="0 0 24 24">
+                        <path
+                          d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.97.24 2.44.41.61.24 1.05.52 1.51.98.46.46.74.9.98 1.51.17.47.36 1.27.41 2.44.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.97-.41 2.44-.24.61-.52 1.05-.98 1.51-.46.46-.9.74-1.51.98-.47.17-1.27.36-2.44.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.97-.24-2.44-.41-.61-.24-1.05-.52-1.51-.98-.46-.46-.74-.9-.98-1.51-.17-.47-.36-1.27-.41-2.44-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.24-1.97.41-2.44.24-.61.52-1.05.98-1.51.46-.46.9-.74 1.51-.98.47-.17 1.27-.36 2.44-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.78.3-1.44.71-2.1 1.37-.66.66-1.07 1.32-1.37 2.1-.3.76-.5 1.64-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.78.71 1.44 1.37 2.1.66.66 1.32 1.07 2.1 1.37.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.78-.3 1.44-.71 2.1-1.37.66-.66 1.07-1.32 1.37-2.1.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.3-.78-.71-1.44-1.37-2.1-.66-.66-1.32-1.07-2.1-1.37-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-10.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"
+                        />
+                      </svg>
+                    </a>
+                    <a href="#" class="footer-top__social-link">
+                      <svg class="icon" viewBox="0 0 24 24">
+                        <path
+                          d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"
+                        />
+                      </svg>
+                    </a>
+                    <a href="#" class="footer-top__social-link">
+                      <svg class="icon" viewBox="0 0 24 24">
+                        <path
+                          d="M21.54 6.49c-.21-.77-.83-1.37-1.6-1.58C18.3 4.5 12 4.5 12 4.5s-6.3 0-7.94.41c-.77.21-1.39.81-1.6 1.58C2 8.13 2 12 2 12s0 3.87.46 5.51c.21.77.83 1.37 1.6 1.58C5.7 19.5 12 19.5 12 19.5s6.3 0 7.94-.41c.77-.21 1.39-.81 1.6-1.58C22 15.87 22 12 22 12s0-3.87-.46-5.51zM10 15V9l5.2 3-5.2 3z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="footer-top__contacts">
+                  <span class="footer-top__label">{Контакты}</span>
+                  <a href="tel:+74953084649" class="footer-top__phone"
+                    >+7 495 30 84 649</a
+                  >
+                  <a
+                    href="mailto:shop@laboratoriacoffee.ru"
+                    class="footer-top__email"
+                    >shop@laboratoriacoffee.ru</a
+                  >
+                </div>
+
+                <p class="footer-top__address">
+                  г. Москва, Пос. Мосрентген, завод Мосрентген 12
+                </p>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="reviews__torn-edge">
-          <svg width="100%" height="100%" viewBox="0 0 1920 100" preserveAspectRatio="none" fill="#010101">
-            <path d="M0 100H1920V30C1900 25 1880 35 1860 28C1840 21 1820 32 1800 27C1780 22 1760 30 1740 25C1720 20 1700 28 1680 23C1660 18 1640 26 1620 21C1600 16 1580 24 1560 19C1540 14 1520 22 1500 17C1480 12 1460 20 1440 15C1420 10 1400 18 1380 13C1360 8 1340 16 1320 11C1300 6 1280 14 1260 9C1240 4 1220 12 1200 7C1180 2 1160 10 1140 5C1120 0 1100 8 1080 3C1060 -2 1040 6 1020 1C1000 -4 980 4 960 -1C940 -6 920 2 900 -3C880 -8 860 0 840 -5C820 -10 800 -2 780 -7C760 -12 740 -4 720 -9C700 -14 680 -6 660 -11C640 -16 620 -8 600 -13C580 -18 560 -10 540 -15C520 -20 500 -12 480 -17C460 -22 440 -14 420 -19C400 -24 380 -16 360 -21C340 -26 320 -18 300 -23C280 -28 260 -20 240 -25C220 -30 200 -22 180 -27C160 -32 140 -24 120 -29C100 -34 80 -26 60 -31C40 -36 20 -28 0 -33V100Z"/>
-          </svg>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-top">
-        <div class="container">
-          <div class="footer-top__content">
-            <div class="footer-top__column">
-              <span class="footer-top__label">{Каталог}</span>
-              <nav class="footer-top__nav">
-                <a href="#" class="footer-top__link">Кофе</a>
-                <a href="#" class="footer-top__link">Какао</a>
-                <a href="#" class="footer-top__link">Чай-латте</a>
-                <a href="#" class="footer-top__link">Сиропы</a>
-                <a href="#" class="footer-top__link">Аксессуары</a>
-              </nav>
-            </div>
-
-            <div class="footer-top__column">
-              <span class="footer-top__label">{Компания}</span>
-              <nav class="footer-top__nav">
-                <a href="#" class="footer-top__link">Контакты</a>
-                <a href="#" class="footer-top__link">Достижения</a>
-                <a href="#" class="footer-top__link">Где попробовать</a>
-                <a href="#" class="footer-top__link">Наше производство</a>
-              </nav>
-            </div>
-
-            <div class="footer-top__column">
-              <span class="footer-top__label">{Помощь}</span>
-              <nav class="footer-top__nav">
-                <a href="#" class="footer-top__link">Сообщество</a>
-                <a href="#" class="footer-top__link">Частые вопросы</a>
-                <a href="#" class="footer-top__link">Как выбрать кофе?</a>
-                <a href="#" class="footer-top__link">Журнал о кофе</a>
-                <a href="#" class="footer-top__link">Доставка и оплата</a>
-                <a href="#" class="footer-top__link">Гарантия на товар</a>
-              </nav>
-            </div>
-
-            <div class="footer-top__right">
-              <div class="footer-top__social-block">
-                <span class="footer-top__label">{Мы на связи}</span>
-                <div class="footer-top__social">
-                  <a href="#" class="footer-top__social-link">
-                    <svg class="icon" viewBox="0 0 24 24"><path d="M22.54 6.42a8.68 8.68 0 0 1-2.5.69 4.36 4.36 0 0 0 1.91-2.4 8.73 8.73 0 0 1-2.77 1.06 4.35 4.35 0 0 0-7.53 2.97 4.47 4.47 0 0 0 .11.99A12.35 12.35 0 0 1 2.8 5.08a4.35 4.35 0 0 0 1.35 5.8 4.31 4.31 0 0 1-1.97-.54v.05a4.35 4.35 0 0 0 3.49 4.27 4.35 4.35 0 0 1-1.96.07 4.36 4.36 0 0 0 4.07 3.02A8.73 8.73 0 0 1 2 19.54a12.3 12.3 0 0 0 6.67 1.95c8 0 12.38-6.63 12.38-12.38 0-.19 0-.37-.01-.56a8.85 8.85 0 0 0 2.17-2.25l-.67.12z"/></svg>
-                  </a>
-                  <a href="#" class="footer-top__social-link">
-                    <svg class="icon" viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.97.24 2.44.41.61.24 1.05.52 1.51.98.46.46.74.9.98 1.51.17.47.36 1.27.41 2.44.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.97-.41 2.44-.24.61-.52 1.05-.98 1.51-.46.46-.9.74-1.51.98-.47.17-1.27.36-2.44.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.97-.24-2.44-.41-.61-.24-1.05-.52-1.51-.98-.46-.46-.74-.9-.98-1.51-.17-.47-.36-1.27-.41-2.44-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.24-1.97.41-2.44.24-.61.52-1.05.98-1.51.46-.46.9-.74 1.51-.98.47-.17 1.27-.36 2.44-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.78.3-1.44.71-2.1 1.37-.66.66-1.07 1.32-1.37 2.1-.3.76-.5 1.64-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.78.71 1.44 1.37 2.1.66.66 1.32 1.07 2.1 1.37.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.78-.3 1.44-.71 2.1-1.37.66-.66 1.07-1.32 1.37-2.1.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.3-.78-.71-1.44-1.37-2.1-.66-.66-1.32-1.07-2.1-1.37-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-10.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>
-                  </a>
-                  <a href="#" class="footer-top__social-link">
-                    <svg class="icon" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
-                  </a>
-                  <a href="#" class="footer-top__social-link">
-                    <svg class="icon" viewBox="0 0 24 24"><path d="M21.54 6.49c-.21-.77-.83-1.37-1.6-1.58C18.3 4.5 12 4.5 12 4.5s-6.3 0-7.94.41c-.77.21-1.39.81-1.6 1.58C2 8.13 2 12 2 12s0 3.87.46 5.51c.21.77.83 1.37 1.6 1.58C5.7 19.5 12 19.5 12 19.5s6.3 0 7.94-.41c.77-.21 1.39-.81 1.6-1.58C22 15.87 22 12 22 12s0-3.87-.46-5.51zM10 15V9l5.2 3-5.2 3z"/></svg>
-                  </a>
-                </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="footer-bottom__content">
+              <span class="footer-bottom__copyright"
+                >© 2025 Laboratoria coffee</span
+              >
+              <div class="footer-bottom__links">
+                <a href="#" class="footer-bottom__link"
+                  >Политика обработки персональных данных</a
+                >
+                <a href="#" class="footer-bottom__link"
+                  >Пользовательское соглашение</a
+                >
+                <a href="#" class="footer-bottom__link">Публичная оферта</a>
               </div>
-
-              <div class="footer-top__contacts">
-                <span class="footer-top__label">{Контакты}</span>
-                <a href="tel:+74953084649" class="footer-top__phone">+7 495 30 84 649</a>
-                <a href="mailto:shop@laboratoriacoffee.ru" class="footer-top__email">shop@laboratoriacoffee.ru</a>
-              </div>
-
-              <p class="footer-top__address">г. Москва, Пос. Мосрентген, завод Мосрентген 12</p>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="footer-bottom">
-        <div class="container">
-          <div class="footer-bottom__content">
-            <span class="footer-bottom__copyright">© 2025 Laboratoria coffee</span>
-            <div class="footer-bottom__links">
-              <a href="#" class="footer-bottom__link">Политика обработки персональных данных</a>
-              <a href="#" class="footer-bottom__link">Пользовательское соглашение</a>
-              <a href="#" class="footer-bottom__link">Публичная оферта</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bg"></div>
-    </footer>
-  </div>
-  <script type="module" src="assets/js/main.js"></script>
-</body>
-
+        <div class="footer-bg"></div>
+      </footer>
+    </div>
+    <script type="module" src="assets/js/main.js"></script>
+  </body>
 </html>
