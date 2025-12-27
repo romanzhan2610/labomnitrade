@@ -7,7 +7,13 @@ export function initHeroCarousel() {
 
   function showCard(index) {
     cards.forEach((card, i) => {
-      card.classList.toggle('is-active', i === index);
+      card.classList.remove('is-active', 'is-exiting');
+      
+      if (i === index) {
+        card.classList.add('is-active');
+      } else if (i === (index - 1 + cards.length) % cards.length) {
+        card.classList.add('is-exiting');
+      }
     });
   }
 

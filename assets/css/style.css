@@ -1,5 +1,6 @@
 @import url("./normalize.css");
 @import url("./reset.css");
+@import url("./modules/components.css");
 @import url("./modules/header.css");
 @import url("./modules/hero.css");
 
@@ -11,15 +12,18 @@
   --color-accent: #5088a5;
   --color-bg-light: #f6f6f6;
   --color-bg-white: #ffffff;
+  --color-bg-dark: #1a1a1a;
   --color-placeholder: #999999;
 
   --container-width: 192rem;
   --container-padding: 4rem;
+  --section-padding: 9rem;
 
   --transition-fast: 0.3s ease;
   --transition-smooth: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 
   --radius-sm: 0.6rem;
+  --radius-md: 1.2rem;
 
   --icon-size: 3.2rem;
   --icon-size-sm: 2.4rem;

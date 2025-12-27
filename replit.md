@@ -9,29 +9,34 @@
 ├── index.html
 ├── assets/
 │   ├── css/
-│   │   ├── style.css          # Главный файл + CSS-переменные
-│   │   ├── normalize.css      # Normalize v8.0.1
-│   │   ├── reset.css          # Кастомный reset
+│   │   ├── style.css              # Главный файл + CSS-переменные
+│   │   ├── normalize.css          # Normalize v8.0.1
+│   │   ├── reset.css              # Кастомный reset
 │   │   └── modules/
-│   │       ├── header.css     # Стили шапки
-│   │       ├── hero.css       # Стили hero-секции
-│   │       └── footer.css     # Стили подвала
+│   │       ├── components.css     # Переиспользуемые компоненты (btn, card, icon-link)
+│   │       ├── header.css         # Стили шапки
+│   │       ├── hero.css           # Стили hero-секции
+│   │       └── footer.css         # Стили подвала
 │   ├── js/
-│   │   ├── main.js            # Точка входа (ES modules)
+│   │   ├── main.js                # Точка входа (ES modules)
 │   │   └── modules/
-│   │       ├── header.js      # JS для шапки
-│   │       └── hero.js        # JS для карусели карточек
+│   │       ├── header.js          # JS для шапки
+│   │       └── hero.js            # JS для карусели карточек
 │   ├── img/
-│   │   └── sprite.svg         # SVG-спрайт иконок
+│   │   ├── sprite.svg             # SVG-спрайт иконок
+│   │   ├── main-card-1.jpg        # Карточка категории 1
+│   │   ├── main-card-2.jpg        # Карточка категории 2
+│   │   └── main-card-3.jpg        # Карточка категории 3
 │   └── video/
-│       └── main-bg.mp4        # Видео-фон для hero (нужно добавить)
+│       └── main-bg.mp4            # Видео-фон для hero
 ```
 
 ## CSS-переменные
 Все переменные определены в `:root` в `style.css`:
 - Шрифты: `--font-main`, `--font-accent`
-- Цвета: `--color-primary`, `--color-accent`, `--color-bg-light`, `--color-bg-white`, `--color-placeholder`
-- Размеры: `--container-width`, `--container-padding`, `--icon-size`, `--icon-size-sm`, `--radius-sm`
+- Цвета: `--color-primary`, `--color-accent`, `--color-bg-light`, `--color-bg-white`, `--color-bg-dark`, `--color-placeholder`
+- Размеры: `--container-width`, `--container-padding`, `--section-padding`, `--icon-size`, `--icon-size-sm`
+- Скругления: `--radius-sm` (0.6rem), `--radius-md` (1.2rem)
 - Анимации: `--transition-fast`, `--transition-smooth`
 
 ## Адаптивная типографика
@@ -39,16 +44,25 @@
 - 2560px+: `13.33px`
 - 768px-: `10px`
 
-## Готовые компоненты
-- [x] Header (шапка с hover-эффектом расширения, прозрачная поверх контента)
-- [x] Hero-секция (видео-фон, заголовок, кнопка, карусель карточек)
+## Компоненты (components.css)
+- `.btn` — базовая кнопка
+- `.btn--outline-light` — белая обводка для тёмного фона
+- `.btn--outline-dark` — чёрная обводка для светлого фона
+- `.card` — базовая карточка с белым фоном
+- `.icon-link` — круглая ссылка с иконкой
+- `.icon-link--arrow` — модификатор с поворотом стрелки
+
+## Готовые секции
+- [x] Header (sticky, фон #F6F6F6, hover-эффект расширения)
+- [x] Hero (видео-фон, заголовок, кнопка, карусель с горизонтальной анимацией)
 
 ## SVG-спрайт иконок
 - `icon-logo-composite` — логотип с outline-эффектом на ховер
 - `icon-search`, `icon-cart`, `icon-favorite`, `icon-user` — иконки шапки
-- `icon-arrow-right` — стрелка для кнопок
+- `icon-arrow-right` — стрелка для кнопок (1.2rem)
 
 ## История изменений
-- 2025-12-27: Добавлена hero-секция с видео-фоном и каруселью карточек
-- 2025-12-27: Шапка теперь прозрачная, накладывается поверх hero-секции
-- 2025-12-27: Рефакторинг CSS — вынесены переменные для transition и размеров иконок, удалены все комментарии
+- 2025-12-27: Рефакторинг — вынесены переиспользуемые компоненты в components.css
+- 2025-12-27: Hero-секция: отступы 90px, горизонтальная анимация карточек, пропорция 16:9
+- 2025-12-27: Все ховеры используют акцентный цвет #5088A5
+- 2025-12-27: Header sticky с фоном #F6F6F6
