@@ -4,49 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Myshop</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
         <div class="container header__inner">
-          <a href="/" class="header__logo logo">
-            <svg class="logo__icon logo__icon--small">
-              <use href="assets/img/sprite.svg#icon-logo-small"></use>
-            </svg>
-            <svg class="logo__icon logo__icon--large">
-              <use href="assets/img/sprite.svg#icon-logo-large"></use>
-            </svg>
-          </a>
+          <div class="header__left">
+            <a href="/" class="header__logo logo">
+              <svg class="logo__icon">
+                <use href="assets/img/sprite.svg#icon-logo-composite"></use>
+              </svg>
+            </a>
 
-          <nav class="header__nav nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="#" class="nav__link">Каталог</a>
-              </li>
-              <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Журнал</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Помощник выбора</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Для бизнеса</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Контакты</a>
-              </li>
-            </ul>
-          </nav>
+            <nav class="header__nav nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Каталог</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">О нас</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Журнал</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Помощник выбора</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Для бизнеса</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
 
           <div class="header__actions actions">
             <form class="search-form">
@@ -84,10 +83,8 @@
       </header>
 
       <main class="main"></main>
-
       <footer class="footer"></footer>
     </div>
-
     <script type="module" src="assets/js/main.js"></script>
   </body>
 </html>

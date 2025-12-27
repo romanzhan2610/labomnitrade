@@ -1,60 +1,66 @@
 @import url("./normalize.css");
 @import url("./reset.css");
+@import url("./modules/header.css");
 
 /* === ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ === */
 :root {
   --font-main: "Roboto", sans-serif;
   --font-accent: "Oswald", sans-serif;
 
-  --color-primary: #000000;
+  --color-primary: #010101; /* Обновленный черный */
+  --color-accent: #5088a5; /* Акцентный (синий) */
   --color-bg-header: #f6f6f6;
   --color-placeholder: #999999;
 
-  --container-width: 192rem; /* 1920px */
+  --container-width: 192rem;
   --gap: 2rem;
 }
 
-/* === MAGIC REM CALCULATION === 
-   При ширине экрана 1920px, 1rem будет равен 10px.
-   Формула: 100vw / 1920 * 10 
-*/
 html {
   font-size: calc(100vw / 1920 * 10);
 }
 
-/* Ограничиваем максимальный размер шрифта, чтобы на 4K экранах не было гигантским */
 @media (min-width: 2560px) {
   html {
     font-size: 13.33px;
   }
 }
-/* Минимальный размер для мобилок (чтобы не было слишком мелко) */
 @media (max-width: 768px) {
   html {
     font-size: 10px;
-  } /* Возврат к стандарту или своя логика */
+  }
 }
 
 body {
   font-family: var(--font-main);
   color: var(--color-primary);
-  font-size: 1.6rem; /* 16px */
+  font-size: 1.6rem;
 }
 
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: 0 4rem; /* Отступы по бокам */
+  padding: 0 4rem;
   width: 100%;
 }
 
+/* ОБЩИЙ КЛАСС ИКОНОК */
 .icon {
-  width: 3.2rem; /* 32px */
+  width: 3.2rem;
   height: 3.2rem;
   display: block;
   stroke: currentColor;
-  fill: none;
+  /* Убрали fill: none, чтобы залитые иконки (как юзер) работали */
+  transition: all 0.3s ease;
 }
 
-/* Подключаем модуль шапки */
-@import url("./modules/header.css");
+/* === КРАСИВЫЙ ФОКУС ДЛЯ ИНПУТОВ === */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none; /* Убираем стандартную обводку */
+  border-color: var(--color-accent) !important;
+  /* Добавляем мягкое свечение цвета акцента */
+  box-shadow: 0 0 0 2px rgba(80, 136, 165, 0.2);
+  transition: all 0.3s ease;
+}

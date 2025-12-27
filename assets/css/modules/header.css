@@ -1,10 +1,11 @@
 .header {
   background-color: var(--color-bg-header);
-  height: 10.4rem; /* 104px */
+  height: 10.4rem;
   width: 100%;
-  position: relative; /* Чтобы логотип мог абсолютно позиционироваться при необходимости, но здесь используем flex */
+  position: relative;
   z-index: 100;
-  transition: height 0.3s ease; /* Плавное изменение высоты */
+  /* Было 0.3s, стало 0.6s для плавности */
+  transition: height 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .header__inner {
@@ -14,79 +15,97 @@
   justify-content: space-between;
 }
 
+/* === ЛЕВЫЙ БЛОК === */
+.header__left {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+
 /* === LOGO === */
 .logo {
   position: relative;
-  width: 16rem; /* 160px */
-  height: 3.5rem; /* 35px */
+  width: 18.3rem;
+  height: 3.5rem;
   display: flex;
   align-items: center;
-  transition: all 0.3s ease;
+  justify-content: center;
+
+  /* Плавное изменение высоты контейнера */
+  transition: height 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+
+  color: var(--color-primary);
+
+  /* Переменные */
+  --outline-opacity: 0;
+  --outline-scale: 0.8;
 }
 
 .logo__icon {
-  width: 100%;
-  height: 100%;
-  transition: opacity 0.3s ease;
-}
-
-.logo__icon--large {
+  width: 18.3rem;
+  height: 12.9rem;
   position: absolute;
-  top: -2rem; /* Подгонка под центр при увеличении */
-  left: -1rem; /* Примерная центровка */
-  width: 18.3rem; /* 183px */
-  height: 12.9rem; /* 129px */
-  opacity: 0;
-  visibility: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+
+  /* Плавное перемещение логотипа (0.6s) */
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 /* === NAVIGATION === */
 .nav__list {
   display: flex;
-  gap: 3rem; /* Расстояние между пунктами */
+  gap: 3rem;
 }
 
 .nav__link {
-  font-family: var(--font-accent); /* Oswald */
+  font-family: var(--font-accent);
   font-weight: 500;
-  font-size: 2rem; /* 20px */
+  font-size: 2rem;
   line-height: 120%;
   text-transform: uppercase;
   color: var(--color-primary);
   white-space: nowrap;
+  transition: color 0.3s ease; /* Цвет можно оставить быстрым */
 }
 
-/* === ACTIONS (RIGHT) === */
+.nav__link:hover {
+  color: var(--color-accent);
+}
+
+/* === ACTIONS === */
 .actions {
   display: flex;
   align-items: center;
   gap: 3rem;
 }
 
-/* Search Form */
+/* Search */
 .search-form {
   position: relative;
-  width: 20.2rem; /* 202px */
-  height: 4.8rem; /* 48px */
-  transition: width 0.3s ease; /* Плавное расширение */
+  width: 20.2rem;
+  height: 4.8rem;
+  /* Плавное расширение поиска синхронно с шапкой */
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .search-form__input {
   width: 100%;
   height: 100%;
   background: #ffffff;
-  border-radius: 0.6rem; /* 6px */
-  border: none;
+  border-radius: 0.6rem;
+  border: 1px solid transparent;
   padding-left: 1.5rem;
-  padding-right: 4rem; /* Место под иконку */
-
+  padding-right: 4rem;
   font-family: "Roboto", sans-serif;
-  font-size: 1.6rem; /* 16px */
-  color: #000;
+  font-size: 1.6rem;
+  color: var(--color-primary);
+  transition: border-color 0.3s ease;
 }
 
 .search-form__input::placeholder {
-  color: var(--color-placeholder); /* #999999 */
+  color: var(--color-placeholder);
 }
 
 .search-form__btn {
@@ -94,51 +113,54 @@
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
-  width: 2.4rem; /* 24px */
+  width: 2.4rem;
   height: 2.4rem;
 }
 
 .search-form__btn .icon {
   width: 100%;
   height: 100%;
-  stroke: black; /* Явно задаем цвет */
+  stroke: var(--color-primary);
+  transition: stroke 0.3s ease;
 }
 
-/* User Menu Icons */
+.search-form__btn:hover .icon {
+  stroke: var(--color-accent);
+}
+
+/* User Icons */
 .user-menu {
   display: flex;
   gap: 2rem;
 }
 
-/* === HOVER EFFECTS (MAGIС) === */
+.user-menu__item {
+  color: var(--color-primary);
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
 
-/* 1. Увеличиваем высоту шапки */
+.user-menu__item:hover {
+  color: var(--color-accent);
+}
+
+/* === HEADER HOVER STATE === */
+
 .header:hover {
-  height: 15.3rem; /* 153px */
+  height: 15.3rem;
 }
 
-/* 2. Логика смены логотипа */
 .header:hover .logo {
-  /* Логотип должен оставаться на месте или чуть сдвигаться, завист от макета */
-  width: 18.3rem;
   height: 12.9rem;
+  --outline-opacity: 1;
+  --outline-scale: 1;
 }
 
-.header:hover .logo__icon--small {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.header:hover .logo__icon--large {
-  opacity: 1;
-  visibility: visible;
-  /* Корректируем позицию большого лого */
-  top: 50%;
-  left: 50%;
+.header:hover .logo__icon {
   transform: translate(-50%, -50%);
 }
 
-/* 3. Расширение инпута поиска */
 .header:hover .search-form {
-  width: 26.5rem; /* 265px */
+  width: 26.5rem;
 }
