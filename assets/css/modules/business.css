@@ -1,13 +1,14 @@
 .business {
   position: relative;
   min-height: calc(100dvh - 8rem);
+  max-height: 100vh;
   background: url('../../img/business-bg.jpg') center/cover no-repeat;
-  display: flex;
-  align-items: flex-end;
 }
 
 .business__inner {
-  padding: 6rem 0;
+  position: absolute;
+  left: var(--container-padding);
+  bottom: 6rem;
   max-width: 60rem;
 }
 
