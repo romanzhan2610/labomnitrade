@@ -42,6 +42,7 @@
 .articles__carousel-wrapper {
   position: relative;
   overflow: hidden;
+  margin-right: calc(-1 * var(--container-padding));
 }
 
 .articles__carousel {
@@ -111,8 +112,9 @@
 .articles__arrow .icon {
   width: 1.6rem;
   height: 1.6rem;
-  stroke: var(--color-bg-white);
-  fill: none;
+  stroke: #ffffff !important;
+  fill: none !important;
+  color: #ffffff !important;
 }
 
 .articles__arrow--prev .icon {
