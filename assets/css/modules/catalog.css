@@ -267,7 +267,7 @@
 }
 
 .catalog__more:hover .icon {
-  stroke: var(--color-bg-white);
+  fill: var(--color-bg-white);
 }
 
 .catalog__more .icon {
