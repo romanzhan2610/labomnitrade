@@ -9,7 +9,7 @@
   position: absolute;
   left: var(--container-padding);
   bottom: 6rem;
-  max-width: 60rem;
+  max-width: 600px;
 }
 
 .business__title {
