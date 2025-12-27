@@ -37,7 +37,7 @@
   color: var(--color-bg-white);
 }
 
-.btn__icon {
+.icon .btn__icon {
   width: 1.2rem;
   height: 1rem;
   flex-shrink: 0;
