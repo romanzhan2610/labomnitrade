@@ -5,23 +5,31 @@ export function initArticlesCarousel() {
   
   if (!carousel || !prevBtn || !nextBtn) return;
   
-  const cardWidth = 380 + 20;
-  let currentIndex = 0;
   const cards = carousel.querySelectorAll('.article-card');
+  if (cards.length === 0) return;
+  
+  const cardStyle = window.getComputedStyle(cards[0]);
+  const cardWidth = cards[0].offsetWidth;
+  const gap = 20;
+  const step = cardWidth + gap;
+  
+  let currentIndex = 0;
   const maxIndex = Math.max(0, cards.length - 2);
   
   function updateCarousel() {
-    carousel.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    carousel.style.transform = `translateX(-${currentIndex * step}px)`;
   }
   
-  prevBtn.addEventListener('click', () => {
+  prevBtn.addEventListener('click', function(e) {
+    e.preventDefault();
     if (currentIndex > 0) {
       currentIndex--;
       updateCarousel();
     }
   });
   
-  nextBtn.addEventListener('click', () => {
+  nextBtn.addEventListener('click', function(e) {
+    e.preventDefault();
     if (currentIndex < maxIndex) {
       currentIndex++;
       updateCarousel();
