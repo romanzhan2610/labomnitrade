@@ -1,11 +1,10 @@
 .header {
-  background-color: var(--color-bg-header);
+  background-color: var(--color-bg-light);
   height: 10.4rem;
   width: 100%;
   position: relative;
   z-index: 100;
-  /* Было 0.3s, стало 0.6s для плавности */
-  transition: height 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: height var(--transition-smooth);
 }
 
 .header__inner {
@@ -15,14 +14,12 @@
   justify-content: space-between;
 }
 
-/* === ЛЕВЫЙ БЛОК === */
 .header__left {
   display: flex;
   align-items: center;
   gap: 6rem;
 }
 
-/* === LOGO === */
 .logo {
   position: relative;
   width: 18.3rem;
@@ -30,15 +27,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /* Плавное изменение высоты контейнера */
-  transition: height 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-
+  transition: height var(--transition-smooth);
   color: var(--color-primary);
-
-  /* Переменные */
-  --outline-opacity: 0;
-  --outline-scale: 0.8;
 }
 
 .logo__icon {
@@ -48,12 +38,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -70%);
-
-  /* Плавное перемещение логотипа (0.6s) */
-  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: transform var(--transition-smooth);
 }
 
-/* === NAVIGATION === */
 .nav__list {
   display: flex;
   gap: 3rem;
@@ -67,41 +54,37 @@
   text-transform: uppercase;
   color: var(--color-primary);
   white-space: nowrap;
-  transition: color 0.3s ease; /* Цвет можно оставить быстрым */
+  transition: color var(--transition-fast);
 }
 
 .nav__link:hover {
   color: var(--color-accent);
 }
 
-/* === ACTIONS === */
-.actions {
+.header__actions {
   display: flex;
   align-items: center;
   gap: 3rem;
 }
 
-/* Search */
 .search-form {
   position: relative;
   width: 20.2rem;
   height: 4.8rem;
-  /* Плавное расширение поиска синхронно с шапкой */
-  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: width var(--transition-smooth);
 }
 
 .search-form__input {
   width: 100%;
   height: 100%;
-  background: #ffffff;
-  border-radius: 0.6rem;
+  background: var(--color-bg-white);
+  border-radius: var(--radius-sm);
   border: 1px solid transparent;
   padding-left: 1.5rem;
   padding-right: 4rem;
-  font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   color: var(--color-primary);
-  transition: border-color 0.3s ease;
+  transition: border-color var(--transition-fast);
 }
 
 .search-form__input::placeholder {
@@ -113,22 +96,21 @@
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
-  width: 2.4rem;
-  height: 2.4rem;
+  width: var(--icon-size-sm);
+  height: var(--icon-size-sm);
 }
 
 .search-form__btn .icon {
   width: 100%;
   height: 100%;
   stroke: var(--color-primary);
-  transition: stroke 0.3s ease;
+  transition: stroke var(--transition-fast);
 }
 
 .search-form__btn:hover .icon {
   stroke: var(--color-accent);
 }
 
-/* User Icons */
 .user-menu {
   display: flex;
   gap: 2rem;
@@ -136,7 +118,7 @@
 
 .user-menu__item {
   color: var(--color-primary);
-  transition: color 0.3s ease;
+  transition: color var(--transition-fast);
   display: flex;
   align-items: center;
 }
@@ -145,16 +127,12 @@
   color: var(--color-accent);
 }
 
-/* === HEADER HOVER STATE === */
-
 .header:hover {
   height: 15.3rem;
 }
 
 .header:hover .logo {
   height: 12.9rem;
-  --outline-opacity: 1;
-  --outline-scale: 1;
 }
 
 .header:hover .logo__icon {

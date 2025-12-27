@@ -2,18 +2,26 @@
 @import url("./reset.css");
 @import url("./modules/header.css");
 
-/* === ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ === */
 :root {
   --font-main: "Roboto", sans-serif;
   --font-accent: "Oswald", sans-serif;
 
-  --color-primary: #010101; /* Обновленный черный */
-  --color-accent: #5088a5; /* Акцентный (синий) */
-  --color-bg-header: #f6f6f6;
+  --color-primary: #010101;
+  --color-accent: #5088a5;
+  --color-bg-light: #f6f6f6;
+  --color-bg-white: #ffffff;
   --color-placeholder: #999999;
 
   --container-width: 192rem;
-  --gap: 2rem;
+  --container-padding: 4rem;
+
+  --transition-fast: 0.3s ease;
+  --transition-smooth: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+
+  --radius-sm: 0.6rem;
+
+  --icon-size: 3.2rem;
+  --icon-size-sm: 2.4rem;
 }
 
 html {
@@ -25,6 +33,7 @@ html {
     font-size: 13.33px;
   }
 }
+
 @media (max-width: 768px) {
   html {
     font-size: 10px;
@@ -40,27 +49,23 @@ body {
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: 0 4rem;
+  padding: 0 var(--container-padding);
   width: 100%;
 }
 
-/* ОБЩИЙ КЛАСС ИКОНОК */
 .icon {
-  width: 3.2rem;
-  height: 3.2rem;
+  width: var(--icon-size);
+  height: var(--icon-size);
   display: block;
   stroke: currentColor;
-  /* Убрали fill: none, чтобы залитые иконки (как юзер) работали */
-  transition: all 0.3s ease;
+  transition: all var(--transition-fast);
 }
 
-/* === КРАСИВЫЙ ФОКУС ДЛЯ ИНПУТОВ === */
 input:focus,
 textarea:focus,
 select:focus {
-  outline: none; /* Убираем стандартную обводку */
+  outline: none;
   border-color: var(--color-accent) !important;
-  /* Добавляем мягкое свечение цвета акцента */
   box-shadow: 0 0 0 2px rgba(80, 136, 165, 0.2);
-  transition: all 0.3s ease;
+  transition: all var(--transition-fast);
 }

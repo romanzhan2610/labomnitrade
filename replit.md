@@ -1,26 +1,42 @@
-# Myshop - Static Website
+# Myshop - Laboratoria Coffee
 
-## Overview
-A static HTML/CSS/JS website for a coffee shop called "Laboratoria Coffee". The site is in Russian language.
+## Обзор
+Верстка главной страницы интернет-магазина кофе. Desktop only. В будущем будет интегрировано с Битрикс.
 
-## Project Structure
-- `index.html` - Main HTML file
-- `assets/css/` - CSS stylesheets
-  - `style.css` - Main styles
-  - `normalize.css`, `reset.css` - CSS resets
-  - `modules/` - Component-specific styles (header, footer)
-- `assets/js/` - JavaScript files
-  - `main.js` - Main entry point (ES modules)
-  - `modules/` - JS modules (header)
-- `assets/img/` - Images and SVG sprites
+## Структура проекта
+```
+/
+├── index.html
+├── assets/
+│   ├── css/
+│   │   ├── style.css          # Главный файл + CSS-переменные
+│   │   ├── normalize.css      # Normalize v8.0.1
+│   │   ├── reset.css          # Кастомный reset
+│   │   └── modules/
+│   │       ├── header.css     # Стили шапки
+│   │       └── footer.css     # Стили подвала
+│   ├── js/
+│   │   ├── main.js            # Точка входа (ES modules)
+│   │   └── modules/
+│   │       └── header.js      # JS для шапки
+│   └── img/
+│       └── sprite.svg         # SVG-спрайт иконок
+```
 
-## Technology Stack
-- Pure HTML5, CSS3, JavaScript (ES Modules)
-- Google Fonts (Oswald, Roboto)
-- No build system required
+## CSS-переменные
+Все переменные определены в `:root` в `style.css`:
+- Шрифты: `--font-main`, `--font-accent`
+- Цвета: `--color-primary`, `--color-accent`, `--color-bg-light`, `--color-bg-white`, `--color-placeholder`
+- Размеры: `--container-width`, `--container-padding`, `--icon-size`, `--icon-size-sm`, `--radius-sm`
+- Анимации: `--transition-fast`, `--transition-smooth`
 
-## Development
-The site is served using Python's built-in HTTP server on port 5000.
+## Адаптивная типографика
+- Base: `font-size: calc(100vw / 1920 * 10)` — 10px на 1920px
+- 2560px+: `13.33px`
+- 768px-: `10px`
 
-## Recent Changes
-- 2025-12-27: Initial setup for Replit environment
+## Готовые компоненты
+- [x] Header (шапка с hover-эффектом расширения)
+
+## История изменений
+- 2025-12-27: Рефакторинг CSS — вынесены переменные для transition и размеров иконок, удалены все комментарии
